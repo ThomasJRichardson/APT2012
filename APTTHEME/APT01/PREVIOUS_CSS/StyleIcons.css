@@ -1,0 +1,73 @@
+﻿/* Icons */
+
+.icon div
+{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-left: 40px;
+}
+
+.icon div.defaulticon
+{
+    background-image: url(images/icon_default_56_32x32.png);
+}
+
+.icon div.coins
+{
+    background-image: url(images/icon_coins_02_32x32.png);
+}
+
+.icon div.coinsbag
+{
+    background-image: url(images/icon_coinsbag_23_32x32.png);
+}
+
+.icon div.member
+{
+    background-image: url(images/icon_member_32x32.png);
+}
+
+.icon div.reporting
+{
+    background-image: url(images/icon_chart_32x32.png);
+}
+
+.icon div.plan
+{
+    background-image: url(images/icon_plan_32x32.png);
+}
+
+.icon div.calc
+{
+    background-image: url(images/icon_calc_32x32.png);
+}
+
+.icon div.scheme
+{
+    background-image: url(images/icon_members_32x32.png);
+}
+
+.icon div.mail
+{
+    background-image: url(images/icon_mail_32x32.png);
+}
+
+.icon-file-default
+{
+    background-image: url(images/icon_file_default.gif);
+}
+
+.icon-file-doc
+{
+    background-image: url(images/icon_file_word.gif);
+}
+
+.icon-file-xls
+{
+    background-image: url(images/icon_file_excel.gif);
+}
+
+.icon-file-pdf
+{
+    background-image: url(images/icon_file_pdf.gif);
+}

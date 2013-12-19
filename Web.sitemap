@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode roles="Member,Scheme Admin,APT Admin,HR Admin">
+    <siteMapNode url="~/" title="$resources:GlobalLocalizations,MyPlan,M  n" >
+      <siteMapNode url="~/SchemeOverview.aspx" title="$resources:GlobalLocalizations,SchemeOverview,Scheme Overview" roles="Scheme Admin,APT Admin" >
+        <siteMapNode url="~/Trustee/TrusteeUnitPriceHistory.aspx" title="Unit Price History" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeSchemeMemberDetails.aspx" title="Scheme Member Details" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeLeavers.aspx" title="Leavers" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeNPD.aspx" title="Normal Pension Date" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeTransferIn.aspx" title="Transfer In" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeInvestmentAllocation.aspx" title="Investment Allocation" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeContributionRates.aspx" title="Contribution Rates" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/TrusteeCurrentValue.aspx" title="Current Value" roles="Scheme Admin,APT Admin" />
+        <siteMapNode url="~/Trustee/SchemeActivity.aspx" title="Member Activity" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      </siteMapNode>      
+      <siteMapNode url="~/MemberOverview.aspx" title="$resources:GlobalLocalizations,MemberOverview,Member Overview" roles="Member,Scheme Admin,APT Admin,HR Admin"/>     
+      <siteMapNode url="~/PlanSummary.aspx" title="$resources:GlobalLocalizations,PlanSummary,Plan Summary" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Contributions.aspx" title="$resources:GlobalLocalizations,Contributions,Contributions" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Investments.aspx" title="$resources:GlobalLocalizations,Investments,Investments" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/InvestmentStrategy.aspx" title="$resources:GlobalLocalizations,InvestmentStrategy,Investment Strategy" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Performance.aspx" title="$resources:GlobalLocalizations,PerformanceStatistics,Performance Statistics" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+    </siteMapNode>
+    
+    <siteMapNode url="~/PensionCalculator.aspx#" title="Tools and Calculator" >
+      <siteMapNode url="~/PensionCalculator.aspx" title="$resources:GlobalLocalizations,PensionCalculator,Pension Calculator" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+   <siteMapNode url="~/RiskProfileCalculator.aspx" title="Risk Profile Calculator" roles="Member,Scheme Admin,APT Admin,HR Admin">
+        <siteMapNode url="~/RiskProfileCalculatorResults.aspx" title="Risk Profile Calculator" roles="Member,Scheme Admin,APT Admin,HR Admin"/>
+      </siteMapNode>
+        </siteMapNode>
+    <siteMapNode url="~/UserProfile.aspx#" title="$resources:GlobalLocalizations,MyProfile,My Profile"  roles="Member,Scheme Admin,APT Admin,HR Admin">
+      <siteMapNode url="~/UserProfile.aspx" title="$resources:GlobalLocalizations,MyProfile,My Profile"  roles="Member,Scheme Admin,APT Admin,HR Admin"/>
+      <siteMapNode url="~/ChangeLoginDetails.aspx" title="$resources:GlobalLocalizations,ChangeMyLoginDetails,Change my login details"  roles="Member,Scheme Admin,APT Admin,HR Admin"/>
+    </siteMapNode>
+    <siteMapNode url="~/Reporting/Reporting.aspx#" title="$resources:GlobalLocalizations,DocumentsAndReporting,Documents &amp; Reporting" description=""  roles="Member,Scheme Admin,APT Admin,HR Admin">
+      <siteMapNode url="~/Reporting/Reporting.aspx" title="$resources:GlobalLocalizations,DocumentsAndReporting,Documents &amp; Reporting"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin" />      
+      <siteMapNode url="~/Reporting/ContributionSchedule.aspx" ReportId="5" title="$resources:GlobalLocalizations,ContributionSchedule,Contribution Schedule"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/LeavingServiceOptions.aspx" ReportId="2" title="$resources:GlobalLocalizations,LeavingServiceOptions,Leaving Service Options"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin" />      
+      <siteMapNode url="~/Reporting/ARFInvestmentStatement.aspx" ReportId="3" title="$resources:GlobalLocalizations,ARFInvestmentStatement,ARF Investment Statement"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/PRSASORP.aspx" ReportId="6" title="Annual PRSA SRP"  description="PRSASORP"  roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <!--<siteMapNode url="~/Reporting/PRSASORPNewBusiness.aspx" ReportId="7" title="PRSA SRP New Business"  description="" roles="Member,Scheme Admin,APT Admin,HR Admin" />-->
+      <siteMapNode url="~/Reporting/PRSASORPNewBusiness.aspx" ReportId="7" title="PRSA SRP New Business"  description="" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/PRSABenefitStatement.aspx" ReportId="8" title="PRSA Statement of Account"  description="" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/GroupDCSORP.aspx" ReportId="9" title="Group DC SORP"  description="Group DC SORP" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/PRBBenefitStatement.aspx" ReportId="10" title="Benefit Statement"  description="Benefit Statement" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/PRBRetirementOptions.aspx" ReportId="11" title="Retirement Options"  description="Retirement Options" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <siteMapNode url="~/Reporting/BenefitStatement.aspx" ReportId="1" title="Benefit Statement"  description="Benefit Statement" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+    </siteMapNode>
+    <siteMapNode url="~/ContactUs.aspx#" title="$resources:GlobalLocalizations,ContactUs,Contact Us"  description="" roles="Member,Scheme Admin,APT Admin,HR Admin">
+      <siteMapNode url="~/ContactUs.aspx" title="$resources:GlobalLocalizations,ContactUs,Contact Us"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

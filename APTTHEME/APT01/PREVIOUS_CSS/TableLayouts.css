@@ -1,0 +1,36 @@
+﻿/*td, th{ margin: 0; padding: 0; vertical-align: top; }
+
+div.static-height { clear: both; height: 366px; margin-bottom: 3px; overflow: hidden; width: 100%; }
+div.static-height table { width: 100%; }
+.static-height thead tr { display: block; }
+
+
+.static-height tbody { display: block; height: 338px; overflow: auto; }
+
+
+.static-height thead th{ display: table-cell; font-size: 11px; padding: 2px 4px !important; }
+.static-height td{ display: table-cell; padding: 4px; }
+.static-height p{ padding: 0px; }
+
+.static-height tr > td:last-child{ white-space: nowrap; }
+.static-height tr > th:last-child{ }
+
+html:not([dummy]) .static-height thead th { width: 350px; }
+html:not([dummy]) .static-height thead th + th { width: 58px; }
+
+.static-height tbody td, [dummy="dummy"]{ width: 372px; }
+.static-height tbody td + td, [dummy="dummy"] { width: 38px; }*/
+
+
+
+td.table-link
+{
+    color: #0071B3;
+    text-decoration: underline;
+}
+
+tr.tableRowSelected td.table-link
+{
+    color: White;
+    text-decoration: none;
+}

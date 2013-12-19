@@ -1,0 +1,596 @@
+/**************************** VERTICAL (Default / No suffixes) *************************************************/
+.igdm_ElectricBlueControlVertical 
+{
+	background-color: white;
+	cursor: default;
+	float:left;
+	/*border: solid 1px;*/
+	white-space: nowrap; /* do not get text wrapped within the menu item*/
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	background-color: #F3FBFE;
+	border: 0px none;
+	overflow: hidden;
+}
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_ElectricBlueControlVerticalDisabled
+{
+	
+}
+
+/*
+ Main Control CSS class when it's active 
+*/
+.igdm_ElectricBlueControlVerticalActive
+{
+
+}
+
+/******************************** ROOT ELEMENTS ***************************************************/
+.igdm_ElectricBlueMenuGroupVerticalRoot
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: Transparent; /* makes the menu blocks mint green - a bg-color MUST be included for IE to work properly! */
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	/* position: relative; */ /* makes the menu blocks be positioned relative to their parent menu item                                       the lack of offset makes these appear normal, but it will make a difference                                       to the absolutely positioned child blocks */
+	color: #000; /* sets the default font colour to black */
+}
+
+.igdm_ElectricBlueMenuItemVerticalRoot
+{
+	font-size: 10px;
+	color: #333333;
+	padding: 6px;
+	padding-left: 12px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_ElectricBlueMenuItemVerticalIcon
+{
+	clear: none;
+	padding-right: 6px;
+	text-align: left;
+	vertical-align: middle;
+	border: 0px none;
+}
+
+ 
+.igdm_ElectricBlueMenuItemVerticalRootLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333333;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootSelected
+{
+	background-color: #1F6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootSelected > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootActive
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #1f6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootActive > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootHover
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #1f6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootHover > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemVerticalRootDisabled > a
+{
+	color: #BBBBBB;
+}
+
+/********************************** END ROOT ELEMENTS *********************************************/
+
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_ElectricBlueMenuGroupVertical
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #FFFFFF; 
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	border: 1px solid #BBBBBB;
+	color:Black;
+}
+
+/**************************** END Menu Group Elemnts ********************************************/
+
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemVertical
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #333; /* sets the default font colour to white */
+	background: #FFFFFF none repeat scroll 0 0;
+	padding: 5px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_ElectricBlueMenuItemVerticalLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333;
+}
+
+.igdm_ElectricBlueMenuItemVertical.igdm_ElectricBlueMenuItemVerticalParent
+{
+	background-image: url(images/igwdm_SubMenuIndicator.gif);
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_ElectricBlueMenuItemVerticalParent
+{
+}
+
+.igdm_ElectricBlueMenuItemVerticalParentLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333;
+}
+
+.igdm_ElectricBlueMenuItemVerticalSelected.igdm_ElectricBlueMenuItemVerticalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+.igdm_ElectricBlueMenuItemVerticalActive.igdm_ElectricBlueMenuItemVerticalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+.igdm_ElectricBlueMenuItemVerticalHover.igdm_ElectricBlueMenuItemVerticalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemVerticalSelected
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemVerticalSelected > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemVerticalActive
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemVerticalActive > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemVerticalHover
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemVerticalHover > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemVerticalDisabled > a
+{
+	color: #CCCCCC;
+}
+
+/* List Item (LI) no inner content */
+.igdm_ElectricBlueMenuItemVerticalSeparator
+{
+	display: block;
+	height: 1px !important;
+	height: 1px;
+	width: 100%;
+	border: 0px none;
+	padding: 0px;
+	margin: 0px auto;
+	background-color: #CCCCCC;
+	position: absolute;
+	clear: both;
+}
+
+/************************************************************************************************\
+|********************** Horizontal / Suffixed with "Horizontal" *********************************|
+\************************************************************************************************/
+.igdm_ElectricBlueControlHorizontal
+{
+	background-color: white;
+	cursor: default;
+	float:left;
+	/*border: solid 1px;*/
+	white-space: nowrap; /* do not get text wrapped within the menu item*/
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	background-color: #F3FBFE;
+	border: 0px none;
+	overflow: hidden;
+}
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_ElectricBlueControlHorizontalDisabled
+{
+	
+}
+
+.igdm_ElectricBlueControlHorizontalActive
+{
+
+}
+
+/************** End Main Control Definitions ********************/
+
+/******************************** ROOT ELEMENTS - Group and Item ***************************************/
+/** Definitions for Root elements should be always before definitions of subElements **/
+.igdm_ElectricBlueMenuGroupHorizontalRoot
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #8aa; /* makes the menu blocks mint green - a bg-color MUST be included for IE to work properly! */
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	/* position: relative; */ /* makes the menu blocks be positioned relative to their parent menu item                                       the lack of offset makes these appear normal, but it will make a difference                                       to the absolutely positioned child blocks */
+	color: #000; /* sets the default font colour to black */
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRoot
+{
+	float: left; /* Required to implement horizontal orientation of menu */
+	font-size: 10px;
+	color: #fff;
+	padding: 6px;
+	padding-left: 12px;
+	border: 1px solid transparent;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalIcon
+{
+	clear: none;
+	padding-right: 6px;
+	text-align: left;
+	vertical-align: middle;
+	border: 0px none;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333333;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootSelected
+{
+	background-color: #1F6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootSelected > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootActive
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #1f6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootActive > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootHover
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #1f6198;
+	border: 1px solid #A6C4E0;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootHover > a
+{
+	color: #FFFFFF;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootDisabled
+{
+	float: left; /* Required to implement horizontal orientation of menu */	
+}
+
+.igdm_ElectricBlueMenuItemHorizontalRootDisabled > a
+{
+	color: #BBBBBB;
+}
+
+/********************************** END ROOT ELEMENTS *********************************************/
+
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_ElectricBlueMenuGroupHorizontal
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #FFFFFF; 
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	border: 1px solid #BBBBBB;
+	color:Black;
+}
+
+/**************************** END Menu Group Elemnts ********************************************/
+
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemHorizontal
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #333; /* sets the default font colour to white */
+	background: #FFFFFF none repeat scroll 0 0;
+	padding: 5px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333;
+}
+
+.igdm_ElectricBlueMenuItemHorizontal.igdm_ElectricBlueMenuItemHorizontalParent
+{
+	background-image: url(images/igwdm_SubMenuIndicator.gif);
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_ElectricBlueMenuItemHorizontalParent
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalParentLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #333;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalSelected.igdm_ElectricBlueMenuItemHorizontalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalActive.igdm_ElectricBlueMenuItemHorizontalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalHover.igdm_ElectricBlueMenuItemHorizontalParent
+{
+	background-image: url(images/igdm_ItemHoverParent.png);
+	background-repeat: repeat-x;
+	background-position: center right;
+	background-color: #e7f6fd;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemHorizontalSelected
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalSelected > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemHorizontalActive
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalActive > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemHorizontalHover
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #052684; /* sets the default font colour to white */
+	background-image: url(images/igdm_ItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #e7f6fd;
+	border: 1px solid #A6C4E0;
+	font-weight: normal;
+}
+
+.igdm_ElectricBlueMenuItemHorizontalHover > a
+{
+	color: #052684;
+}
+
+/* List Item (Li) */
+.igdm_ElectricBlueMenuItemHorizontalDisabled > a
+{
+	color: #CCCCCC;
+}
+
+/* List Item (LI) no inner content */
+.igdm_ElectricBlueMenuItemHorizontalSeparator
+{
+	display: block;
+	width: 1px !important;
+	width: 1px;
+	height: 100%;
+	border: 0px none;
+	padding: 0px;
+	margin: 0px auto;
+	background-color: #CCCCCC;
+}
+
+
+/* Scrolling container - DIV */
+.igdm_ElectricBlueMenuScrollContainerHorizontal
+{
+}
+
+/* Left scrolling element for root level items Horizontal orientation - DIV */
+.igdm_ElectricBlueMenuScrollerRootLeft
+{
+}
+
+/* Right scrolling element for root level items Horizontal orientation - DIV */
+.igdm_ElectricBlueMenuScrollerRootRight
+{
+}
+
+/* Left scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_ElectricBlueMenuScrollerLeft
+{
+}
+
+/* Right scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_ElectricBlueMenuScrollerRight
+{
+}

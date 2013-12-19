@@ -1,0 +1,452 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: Arial;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: #333;
+    background: #f9fafb;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+strong {
+    font-weight: bold;
+}
+.clear {
+    clear: both;
+}
+#container {
+    width: 804px;
+    margin: 0 auto;
+}
+#bookmark {
+    float: left;
+    margin: 17px 0 0 0;
+    width: 488px;
+    height: 140px;
+    padding-left: 316px;
+}
+
+#bookmark1 {
+    float: left;
+    margin: 17px 0 0 0;
+    width: 488px;
+    height: 140px;
+    padding-left: 0px;
+}
+#bookmark1 #bookmarkcontainer1 {
+    float: left;
+}
+#bookmark1 #bookmarkcontainer1 a {
+    float: left; 
+    width: 600px;
+    height: 110px;
+    color: Red;
+    background-color: #FFC3CE;
+    border: 1px Solid red;    
+    margin: 10px auto 10px -15px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 13px 0 0 38px;   
+}
+
+
+#LoginFailurePanel 
+{
+    position: absolute;
+    top: -217px;
+    color: Red;
+    background-color: #FFC3CE;
+    border: 1px Solid red;
+    padding: 10px;
+    width: 385px;
+    margin: 10px auto 10px -15px;
+    text-align: center;
+    font-weight: bold;
+    left: 135px;
+}   
+#bookmark #bookmarkcontainer {
+    float: left;
+}
+#bookmark #bookmarkcontainer a {
+    float: left;
+ 
+    width: 161px;
+    height: 30px;
+    background: #ecf8fe url("images/bookmark.png") no-repeat 0 0;
+    color: #295c8f;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 13px 0 0 38px;
+}
+#bookmark #bookmarkcontainer a:hover {
+    background-position: 0 -43px;
+    color: #295c8f;
+}
+#bookmark #bookmarkcontainer a#close {
+    float: left;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background: none;
+    line-height: 0;
+    padding: 1px 1px 1px 3px;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: .6em;
+    color: #a7bcd0;
+}
+#bookmark #bookmarkcontainer a#close:hover {
+    color: #295c8f;
+}
+#left {
+    clear: both;
+    float: left;
+    width: 425px;
+}
+#left #hometab {
+    float: left;
+    clear: both;
+    margin-top: 26px;
+}
+#left #hometab a {
+    display: block;
+    background:  #ecf8fe url("images/home-tab-bg.png") ;
+    width: 27px;
+    height: 51px;
+    text-indent: -9999px;
+}
+#left #hometab a:hover {
+    background-position: 0 -51px;
+}
+#left #loginbox {
+    float: left;
+    width: 304px;
+    height: 490px;
+    padding: 26px 0 0 73px;
+    background: #fafafb url("images/login-box-bg-blue.png") no-repeat 0 0;
+    position: relative;
+}
+#igilogin #left #loginbox {
+    background: #FAFAFB url("images/login-box-bg.png") no-repeat 0 0;
+    height: 455px;
+}
+#left #loginbox #iglogo, #left #loginbox #igilogo {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#left #loginbox #aptlogo {
+    margin: 0 0 0 43px;
+}
+#left #loginbox #aptlogo a {
+    width: 194px;
+    height: 41px;
+    display: block;
+    background: transparent url("images/APT-LoginLogo.png") no-repeat 0 0;
+    text-indent: -10000px;
+}
+#left #loginbox #APTlogo a {
+    width: 200px;
+    height: 110px;
+    display: block;
+    background: transparent  url("images/APT-LoginLogo.png") no-repeat 0 0;
+    text-indent: -10000px;
+}
+#left #loginbox #fxo_aptlogo {
+    float: left;
+    margin: 0 0 0 -30px;
+    padding: 0;
+}
+#left #loginbox #fxo_aptlogo a {
+    width: 295px;
+    height: 50px;
+    display: block;
+    background: transparent url("images/APT-LoginLogo.png") no-repeat 0 0;
+    text-indent: -10000px;
+}
+#left #login {
+    position: relative;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: block;
+}
+#left #login fieldset {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 15px 0 0 0;
+    width: 250px;
+}
+#left #login label {
+    float: left;
+    clear: both;
+    color: #42505d;
+    font-size: 1em;
+    min-width: 133px;
+    padding: 20px 0 12px 0;
+}
+#left #login input {
+    -moz-box-shadow: 0 0 0 5px #F4F5F5;
+    -webkit-box-shadow: 0 0 0 5px #F4F5F5;
+    box-shadow: 0 0 0 5px #F4F5F5;
+    overflow: visible;
+}
+#left #login input:focus {
+    border-color: #97B3C6!important;
+    -moz-box-shadow: 0 0 0 5px #E9F4FA;
+    -webkit-box-shadow: 0 0 0 5px #E9F4FA;
+    box-shadow: 0 0 0 5px #E9F4FA;
+}
+#left #login #account_id, #left #login #password {
+    float: left;
+    clear: both;
+    border: 1px solid #D0D6DA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 4px 3px 4px;
+    font-size: 1em;
+    width: 220px;
+    height: 22px;
+}
+#left #login #account_id, #left #login #email {
+    float: left;
+    clear: both;
+    border: 1px solid #D0D6DA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 4px 3px 4px;
+    font-size: 1em;
+    width: 220px;
+    height: 22px;
+}
+#left #login #account_id, #left #login #phone {
+    float: left;
+    clear: both;
+    border: 1px solid #D0D6DA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 4px 3px 4px;
+    font-size: 1em;
+    width: 220px;
+    height: 22px;
+}
+
+#left #loginbox #rememberbox {
+    clear: both;
+    float: left;
+    padding: 28px 0 5px 0;
+    display: block;
+    width: 230px;
+}
+#left #loginbox #rememberbox #remember {
+    margin: 0 0 0 6px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#left #login #rememberbox #rememberlabel {
+    float: left;
+    font-size: .8em;
+    color: #295c8f;
+    font-weight: bold;
+    padding: 2px 0 0 0;
+}
+#left #login p.warning {
+    clear: left;
+    font-size: .7em;
+    color: #727e8a;
+    text-align: left;
+    line-height: 14px;
+    width: 230px;
+}
+#left #login .demo-label {
+    font-size: .8em;
+    color: #000;
+}
+#left #login .demo-label p {
+    padding-top: 3px;
+}
+#left #login #demo-toggle {
+    float: left;
+}
+#left #login .lang-select {
+    float: left;
+    margin: 20px 0 12px 10px;
+}
+.ie7 #left #login .lang-select {
+    float: left;
+    padding: 20px 0 12px 0;
+}
+#left #login .demo-label-wrapper {
+    float: left;
+    width: 133px;
+}
+.ie7 #left #login .demo-label-wrapper {
+    float: left;
+    width: 133px;
+    margin: 0;
+    padding: 0;
+}
+.ie7 #left #login .lang-select-wrapper {
+    float: left;
+    width: 100px margin:0;
+    padding: 0;
+}
+#left #login .lang-select-wrapper {
+    float: right;
+    width: 100px;
+}
+#left #login #loginbutton {
+    clear: left;
+    float: left;
+    width: 233px;
+    height: 42px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background: #2f6093 url("images/login-button-bg.png") repeat-x 0 0;
+    color: #fff;
+    font-size: 1.2em;
+    border: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: #254a7a -1px -1px 0;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+#left #loginbox #loginoptions {
+    width: 320px;
+    padding: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+#left #loginbox #loginoptions a {
+    display: block;
+    text-align: left;
+    float: left;
+    color: #295c8f;
+    font-size: .8em;
+    text-decoration: none;
+}
+#left #loginbox #loginoptions a.lostDetails {
+    width: 170px;
+}
+#left #loginbox #loginoptions a.openAccount {
+    width: 150px;
+    font-weight: bold;
+    float: right;
+    text-align: right;
+}
+#left #loginbox #loginoptions a:hover {
+    color: #d84e57;
+}
+#left #disclaimer {
+    float: left;
+    padding: 0 0 20px 40px;
+    width: 360px;
+}
+#left #disclaimer p {
+    color: #919aa3;
+    font-size: .6em;
+    line-height: 12px;
+    padding-bottom: 5px;
+}
+#right {
+    float: left;
+}
+
+#right #more {
+    float: left;
+    clear: left;
+    padding: 40px 0 0 10px;
+    width: 360px;
+}
+#right #more p.title, #right #more h3 {
+    color: #133865;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px dotted #c8d2da;
+    padding-bottom: 11px;
+}
+#right #more ul {
+    float: left;
+    clear: left;
+    padding: 10px 0 15px 10px;
+}
+#right #more ul li {
+    color: #4c5b6a;
+    padding: 5px 0;
+    font-size: .8em;
+    padding-left: 18px;
+    line-height: 17px;
+    background: #f9fafb url("images/bullet.png") no-repeat 0 4px;
+}
+#right #more p {
+    clear: both;
+    color: #295c8f;
+    font-size: .8em;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 3px;
+}
+#right #more a {
+    color: #2b5b8c;
+    text-decoration: none;
+}
+#right #more a:hover {
+    color: #d84e57;
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}
+#right #more span.rss-grp {
+    float: right;
+    width: 100px;
+}
+#right #more span.rss-grp a {
+    float: left;
+}
+#right #more span.rss-grp span.sp {
+    float: left;
+    padding: 2px 5px 0 0;
+}
+#right #more span.rss-grp a.rss {
+    font-size: 10px;
+    padding: 5px 5px 0 0;
+}
+#right #more #marketUpdate .standfirst-link {
+    float: right;
+}
+#right #more #marketUpdate p {
+    padding-top: 7px;
+    line-height: 17px;
+    font-weight: normal;
+}

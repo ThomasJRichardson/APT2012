@@ -1,0 +1,2013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C18EFBF-D171-432D-8738-15BFAB59CC9C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APT2012</RootNamespace>
+    <AssemblyName>APT2012</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+    <DesktopBuildPackageLocation>..\..\..\..\APT2012\APT2012.zip</DesktopBuildPackageLocation>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+    <DesktopBuildPackageLocation>..\..\..\..\APT2012\APT2012.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DesktopBuildPackageLocation>..\..\DEPLOYMENTS-17112013\APT2012.DEPLOY.LOCALHOST\APT2012.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DesktopBuildPackageLocation>..\..\..\..\APT2012ADMIN\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>APTADMINKEY.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|x64'">
+    <OutputPath>bin\x64\test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test|x86'">
+    <OutputPath>bin\x86\test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PREPROD|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DesktopBuildPackageLocation>\\Preprod-g6\apt-deployments\APT.DEPLOYMENT.APT2012_v1.11.0.1\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PREPROD|x64'">
+    <OutputPath>bin\x64\PREPROD\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PREPROD|x86'">
+    <OutputPath>bin\x86\PREPROD\</OutputPath>
+    <DesktopBuildPackageLocation>..\..\..\..\APT2012ADMIN\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.DEV|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DesktopBuildPackageLocation>..\..\..\..\FTP\APT2012.DEPLOY.H365.DEV.v1.12.0.4\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.DEV|x64'">
+    <OutputPath>bin\x64\APT2012.H365.DEV\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.DEV|x86'">
+    <OutputPath>bin\x86\APT2012.H365.DEV\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.LIVE|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DesktopBuildPackageLocation>..\..\..\..\FTP\APT2012.DEPLOY.H365.LIVE.v1.12.0.6\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.LIVE|x64'">
+    <OutputPath>bin\x64\APT2012.H365.LIVE\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT2012.H365.LIVE|x86'">
+    <OutputPath>bin\x86\APT2012.H365.LIVE\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DeployIisAppPath>APT2012</DeployIisAppPath>
+    <DesktopBuildPackageLocation>..\..\..\FTP\APT2012.DEPLOY.H365.LIVEv1.13.0.0\APT2012.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT.RAVEN|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+    <DesktopBuildPackageLocation>\\Raven\apt.deployments\APT2012.DEPLOY.RAVEN_v1.12.0.10\APT2012.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT.RAVEN|x64'">
+    <OutputPath>bin\x64\APT.RAVEN\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APT.RAVEN|x86'">
+    <OutputPath>bin\x86\APT.RAVEN\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APTREPORTDEBUG|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APTREPORTDEBUG|x64'">
+    <OutputPath>bin\x64\APTREPORTDEBUG\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'APTREPORTDEBUG|x86'">
+    <OutputPath>bin\x86\APTREPORTDEBUG\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WEBDEV-G4|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WEBDEV-G4|x64'">
+    <OutputPath>bin\x64\WEBDEV-G4\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WEBDEV-G4|x86'">
+    <OutputPath>bin\x86\WEBDEV-G4\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DesktopBuildPackageLocation>\\Webdev-g4\aptdeployments\APT2012.DEPLOY.V2.0.0.0\APT2012.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/APT2012</DeployIisAppPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSFriendly, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\CSSFriendly.dll</HintPath>
+    </Reference>
+    <Reference Include="CuteWebUI.AjaxUploader, Version=3.0.0.0, Culture=neutral, PublicKeyToken=bc00d4b0e43ec38d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\CuteWebUI.AjaxUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.Web.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.Web.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.Documents.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.Documents.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.Excel.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.Excel.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.Misc.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.Misc.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.Shared.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.Shared.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebCalcManager.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebCalcManager.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebChart.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebChart.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebGauge.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebGauge.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebGrid.DocumentExport.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebGrid.DocumentExport.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebGrid.ExcelExport.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebGrid.ExcelExport.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebGrid.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebGrid.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebListbar.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebListbar.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebNavigator.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebNavigator.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebTab.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebTab.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.UltraWebToolbar.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.UltraWebToolbar.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebCombo.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebCombo.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebDataInput.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebDataInput.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebDateChooser.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebDateChooser.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebHtmlEditor.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebHtmlEditor.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebNavBar.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebNavBar.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebResizingExtender.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebResizingExtender.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebSchedule.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebSchedule.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebScheduleDataProvider.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebScheduleDataProvider.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics35.WebUI.WebSpellChecker.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage for .NET 2009.1\ASP.NET\CLR3.5\Bin\Infragistics35.WebUI.WebSpellChecker.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>Lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>Lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SanitizerProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Entity\3.5.0.0__b77a5c561934e089\System.Web.Entity.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APTTHEME\APT01\APTglobal-login.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\APTStyleContent.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\APTStyleMobile.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\APTStylePrint.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-01.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-02.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-03.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-04.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-05.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\apt-gradient-06.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\APT-LoginLogo.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\APT-LoginLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\APT-Logo.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\APT-Online-Logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\APTicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\bookmark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\Calendar_scheduleHS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\genericITAllianceImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\home-tab-bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_calc_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_chart_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_coinsbag_23_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_coins_02_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_default_56_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_default.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_excel.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_jpeg.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_pdf.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_txt.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_word.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_file_zip.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_home_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_mail_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_mail_32x32_.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_members_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_member_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_member_36_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_member_36_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_note_56_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_pie_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_plan_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_reporting_20_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\icon_table_32x32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\login-box-bg-blue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\login-box-bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\login-button-bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\login_dialog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\mood-cloudy.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\mood-rainy.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\mood-sunny.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\ui-bg_flat_50_5c5c5c_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\images\ui-icons_454545_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APTTHEME\APT01\jquery-ui.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ChartImages\Chart_0.png" />
+    <Content Include="ChartImages\Chart_1.png" />
+    <Content Include="ChartImages\Chart_10.png" />
+    <Content Include="ChartImages\Chart_11.png" />
+    <Content Include="ChartImages\Chart_12.png" />
+    <Content Include="ChartImages\Chart_13.png" />
+    <Content Include="ChartImages\Chart_2.png" />
+    <Content Include="ChartImages\Chart_3.png" />
+    <Content Include="ChartImages\Chart_4.png" />
+    <Content Include="ChartImages\Chart_5.png" />
+    <Content Include="ChartImages\Chart_6.png" />
+    <Content Include="ChartImages\Chart_7.png" />
+    <Content Include="ChartImages\Chart_8.png" />
+    <Content Include="ChartImages\Chart_9.png" />
+    <Content Include="controls\TrusteeReportNav2.ascx" />
+    <Content Include="Graphics\American Airlines.gif" />
+    <Content Include="Graphics\Arup.gif" />
+    <Content Include="Graphics\BigFishWeb.gif" />
+    <Content Include="Graphics\BOI.gif" />
+    <Content Include="Graphics\CPW.gif" />
+    <Content Include="Graphics\EMC.gif" />
+    <Content Include="Graphics\Gaelectric.gif" />
+    <Content Include="Graphics\genericITAllianceImage.jpg" />
+    <Content Include="ChartImages\IamText.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="Graphics\ICS.gif" />
+    <Content Include="Graphics\NextiraOne.gif" />
+    <Content Include="Graphics\Nypro.gif" />
+    <Content Include="Graphics\Otterbox.gif" />
+    <Content Include="Graphics\sei.gif" />
+    <Content Include="Graphics\SIG.gif" />
+    <Content Include="Graphics\Softtek.gif" />
+    <Content Include="Graphics\STEricsson.gif" />
+    <Content Include="Graphics\Veolia.gif" />
+    <Content Include="IPPP\aboutthescheme.aspx" />
+    <Content Include="IPPP\confirmdetails.aspx" />
+    <Content Include="IPPP\contact.aspx" />
+    <Content Include="IPPP\css\bootstrap.min.css" />
+    <Content Include="IPPP\css\Calander.css" />
+    <Content Include="IPPP\css\reset.css" />
+    <Content Include="IPPP\css\skeleton.css" />
+    <Content Include="IPPP\css\style.css" />
+    <Content Include="IPPP\css\superfish.css" />
+    <Content Include="IPPP\faq.aspx" />
+    <Content Include="IPPP\images\alliedlogotext.jpg" />
+    <Content Include="IPPP\images\logo.jpg" />
+    <Content Include="IPPP\images\main_bg.jpg" />
+    <Content Include="IPPP\images\menu_bg.jpg" />
+    <Content Include="IPPP\images\ptsblogo.jpg" />
+    <Content Include="IPPP\index.aspx" />
+    <Content Include="IPPP\js\bootbox.min.js" />
+    <Content Include="IPPP\js\bootstrap.min.js" />
+    <Content Include="IPPP\js\common.js" />
+    <Content Include="IPPP\js\home-slider02.js" />
+    <Content Include="IPPP\js\jquery-1.8.2.min.js" />
+    <Content Include="IPPP\js\script.js" />
+    <Content Include="IPPP\Template\contactus.htm" />
+    <Content Include="IPPP\Template\youroptions.htm" />
+    <Content Include="IPPP\youroptions.aspx" />
+    <Content Include="js\jquery-1.7.2.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\jquery-1.7.2.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\jquery-ui.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="account-suspended.aspx" />
+    <Content Include="Lib\AjaxControlToolkit.dll" />
+    <Content Include="Lib\Common.Logging.dll" />
+    <Content Include="Lib\CuteWebUI.AjaxUploader.dll" />
+    <Content Include="Lib\log4net.dll" />
+    <Content Include="Lib\SanitizerProviders.dll" />
+    <Content Include="login.aspx" />
+    <Content Include="lost-details.aspx" />
+    <Content Include="MemberOverview.aspx" />
+    <Content Include="Performance.aspx" />
+    <Content Include="Reporting\BenefitStatement.aspx" />
+    <Content Include="RequestComplete.aspx" />
+    <Content Include="RiskProfileCalculator.aspx" />
+    <Content Include="RiskProfileCalculatorResults.aspx" />
+    <Content Include="Trustee\SchemeActivity.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\SqlStoredProcedureProfileProvider.cs" />
+    <Content Include="App_Code\SqlTableProfileProvider.cs" />
+    <Compile Include="APTAjax.aspx.cs">
+      <DependentUpon>APTAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APTAjax.aspx.designer.cs">
+      <DependentUpon>APTAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLoginDetails.aspx.cs">
+      <DependentUpon>ChangeLoginDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeLoginDetails.aspx.designer.cs">
+      <DependentUpon>ChangeLoginDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartInvestmentValueOverTime.aspx.cs">
+      <DependentUpon>ChartInvestmentValueOverTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartInvestmentValueOverTime.aspx.designer.cs">
+      <DependentUpon>ChartInvestmentValueOverTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contributions.aspx.cs">
+      <DependentUpon>Contributions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contributions.aspx.designer.cs">
+      <DependentUpon>Contributions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\TrusteeReportNav2.ascx.cs">
+      <DependentUpon>TrusteeReportNav2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\TrusteeReportNav2.ascx.designer.cs">
+      <DependentUpon>TrusteeReportNav2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="account-suspended.aspx.cs">
+      <DependentUpon>account-suspended.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account-suspended.aspx.designer.cs">
+      <DependentUpon>account-suspended.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\aboutthescheme.aspx.cs">
+      <DependentUpon>aboutthescheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\aboutthescheme.aspx.designer.cs">
+      <DependentUpon>aboutthescheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\confirmdetails.aspx.cs">
+      <DependentUpon>confirmdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\confirmdetails.aspx.designer.cs">
+      <DependentUpon>confirmdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\Enums\GenderType.cs" />
+    <Compile Include="IPPP\Enums\MaritalStatus.cs" />
+    <Compile Include="IPPP\faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\IPPP.Master.cs">
+      <DependentUpon>IPPP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\IPPP.Master.designer.cs">
+      <DependentUpon>IPPP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="IPPP\Messages.cs" />
+    <Compile Include="IPPP\youroptions.aspx.cs">
+      <DependentUpon>youroptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPPP\youroptions.aspx.designer.cs">
+      <DependentUpon>youroptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lost-details.aspx.cs">
+      <DependentUpon>lost-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lost-details.aspx.designer.cs">
+      <DependentUpon>lost-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberOverview.aspx.designer.cs">
+      <DependentUpon>MemberOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberOverview.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Performance.aspx.cs">
+      <DependentUpon>Performance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Performance.aspx.designer.cs">
+      <DependentUpon>Performance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\BenefitStatement.aspx.cs">
+      <DependentUpon>BenefitStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\BenefitStatement.aspx.designer.cs">
+      <DependentUpon>BenefitStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DataManager.cs" />
+    <Compile Include="Reporting\GroupDCSORP.aspx.cs">
+      <DependentUpon>GroupDCSORP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\GroupDCSORP.aspx.designer.cs">
+      <DependentUpon>GroupDCSORP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PRSABenefitStatement.aspx.cs">
+      <DependentUpon>PRSABenefitStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PRSABenefitStatement.aspx.designer.cs">
+      <DependentUpon>PRSABenefitStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PRSASORPNewBusiness.aspx.cs">
+      <DependentUpon>PRSASORPNewBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PRSASORPNewBusiness.aspx.designer.cs">
+      <DependentUpon>PRSASORPNewBusiness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PRSASORP.aspx.cs">
+      <DependentUpon>PRSASORP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PRSASORP.aspx.designer.cs">
+      <DependentUpon>PRSASORP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InvestmentStrategy.aspx.cs">
+      <DependentUpon>InvestmentStrategy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvestmentStrategy.aspx.designer.cs">
+      <DependentUpon>InvestmentStrategy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ARFInvestmentStatement.aspx.cs">
+      <DependentUpon>ARFInvestmentStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ARFInvestmentStatement.aspx.designer.cs">
+      <DependentUpon>ARFInvestmentStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ContributionSchedule.aspx.cs">
+      <DependentUpon>ContributionSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ContributionSchedule.aspx.designer.cs">
+      <DependentUpon>ContributionSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investments.aspx.cs">
+      <DependentUpon>Investments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investments.aspx.designer.cs">
+      <DependentUpon>Investments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlanSummary.aspx.cs">
+      <DependentUpon>PlanSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlanSummary.aspx.designer.cs">
+      <DependentUpon>PlanSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestComplete.aspx.cs">
+      <DependentUpon>RequestComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestComplete.aspx.designer.cs">
+      <DependentUpon>RequestComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskProfileCalculator.aspx.cs">
+      <DependentUpon>RiskProfileCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskProfileCalculator.aspx.designer.cs">
+      <DependentUpon>RiskProfileCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskProfileCalculatorResults.aspx.cs">
+      <DependentUpon>RiskProfileCalculatorResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskProfileCalculatorResults.aspx.designer.cs">
+      <DependentUpon>RiskProfileCalculatorResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\SchemeActivity.aspx.cs">
+      <DependentUpon>SchemeActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\SchemeActivity.aspx.designer.cs">
+      <DependentUpon>SchemeActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemeOverview.aspx.cs">
+      <DependentUpon>SchemeOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchemeOverview.aspx.designer.cs">
+      <DependentUpon>SchemeOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PensionCalculator.aspx.cs">
+      <DependentUpon>PensionCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PensionCalculator.aspx.designer.cs">
+      <DependentUpon>PensionCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeContributionRates.aspx.cs">
+      <DependentUpon>TrusteeContributionRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeContributionRates.aspx.designer.cs">
+      <DependentUpon>TrusteeContributionRates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeCurrentValue.aspx.cs">
+      <DependentUpon>TrusteeCurrentValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeCurrentValue.aspx.designer.cs">
+      <DependentUpon>TrusteeCurrentValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeInvestmentAllocation.aspx.cs">
+      <DependentUpon>TrusteeInvestmentAllocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeInvestmentAllocation.aspx.designer.cs">
+      <DependentUpon>TrusteeInvestmentAllocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeLeavers.aspx.cs">
+      <DependentUpon>TrusteeLeavers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeLeavers.aspx.designer.cs">
+      <DependentUpon>TrusteeLeavers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeNPD.aspx.cs">
+      <DependentUpon>TrusteeNPD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeNPD.aspx.designer.cs">
+      <DependentUpon>TrusteeNPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeSchemeMemberDetails.aspx.cs">
+      <DependentUpon>TrusteeSchemeMemberDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeSchemeMemberDetails.aspx.designer.cs">
+      <DependentUpon>TrusteeSchemeMemberDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeTransferIn.aspx.cs">
+      <DependentUpon>TrusteeTransferIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeTransferIn.aspx.designer.cs">
+      <DependentUpon>TrusteeTransferIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trustee\TrusteeUnitPriceHistory.aspx.cs">
+      <DependentUpon>TrusteeUnitPriceHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trustee\TrusteeUnitPriceHistory.aspx.designer.cs">
+      <DependentUpon>TrusteeUnitPriceHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\LeavingServiceOptions.aspx.cs">
+      <DependentUpon>LeavingServiceOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\LeavingServiceOptions.aspx.designer.cs">
+      <DependentUpon>LeavingServiceOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Reporting.aspx.cs">
+      <DependentUpon>Reporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Reporting.aspx.designer.cs">
+      <DependentUpon>Reporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contributions.aspx" />
+    <Content Include="Investments.aspx" />
+    <Content Include="App_Browsers\ie.browser" />
+    <Content Include="App_Browsers\firefox.browser" />
+    <None Include="APT2012.dll.log4net">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="APTADMINKEY.snk" />
+    <Content Include="PlanSummary.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="Web.PREPROD.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.APT2012.H365.LIVE.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.APT.RAVEN.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.APT2012.H365.DEV.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.APTREPORTDEBUG.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="APTTHEME\APT01\images\vssver2.scc" />
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.test.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.WEBDEV-G4.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="IPPP\IPPP.Master" />
+    <Content Include="packages.config" />
+    <None Include="Lib\AjaxControlToolkit.dll.refresh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="UserProfile.aspx" />
+    <Content Include="Reporting\Reporting.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalLocalizations.resx">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_LocalResources\ChangeLoginDetails.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ContactUs.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Contributions.aspx.resx" />
+    <Content Include="App_LocalResources\Default.aspx.resx" />
+    <Content Include="App_LocalResources\Investments.aspx.resx" />
+    <Content Include="App_LocalResources\InvestmentStrategy.aspx.resx" />
+    <Content Include="App_LocalResources\login.aspx.resx" />
+    <Content Include="App_LocalResources\PensionCalculator.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PlanSummary.aspx.resx" />
+    <Content Include="App_LocalResources\SchemeOverview.aspx.resx" />
+    <Content Include="App_LocalResources\Site.Master.resx" />
+    <Content Include="App_LocalResources\UserProfile.aspx.resx" />
+    <Content Include="App_GlobalResources\GlobalLocalizations.ru.resx">
+      <LastGenOutput>GlobalLocalizations.ru.designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_LocalResources\ChangeLoginDetails.aspx.ru.resx" />
+    <Content Include="App_LocalResources\ContactUs.aspx.ru.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Contributions.aspx.ru.resx" />
+    <Content Include="App_LocalResources\Default.aspx.ru.resx" />
+    <Content Include="App_LocalResources\Investments.aspx.ru.resx" />
+    <Content Include="App_LocalResources\InvestmentStrategy.aspx.ru.resx" />
+    <Content Include="App_LocalResources\login.aspx.ru.resx" />
+    <Content Include="App_LocalResources\PensionCalculator.aspx.ru.resx" />
+    <Content Include="App_LocalResources\PlanSummary.aspx.ru.resx" />
+    <Content Include="App_LocalResources\SchemeOverview.aspx.ru.resx" />
+    <Content Include="App_LocalResources\Site.Master.ru.resx" />
+    <Content Include="App_LocalResources\UserProfile.aspx.ru.resx" />
+    <Content Include="Reporting\App_LocalResources\Reporting.aspx.resx" />
+    <Content Include="Reporting\App_LocalResources\LeavingServiceOptions.aspx.resx" />
+    <Content Include="Reporting\App_LocalResources\ContributionSchedule.aspx.resx" />
+    <Content Include="Reporting\App_LocalResources\ARFInvestmentStatement.aspx.resx" />
+    <Content Include="Reporting\App_LocalResources\ARFInvestmentStatement.aspx.ru.resx" />
+    <Content Include="Reporting\App_LocalResources\ContributionSchedule.aspx.ru.resx" />
+    <Content Include="Reporting\App_LocalResources\LeavingServiceOptions.aspx.ru.resx" />
+    <Content Include="Reporting\App_LocalResources\Reporting.aspx.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APTAjax.aspx" />
+    <Content Include="ChangeLoginDetails.aspx" />
+    <Content Include="ChartInvestmentValueOverTime.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="GaugeImage.aspx" />
+    <Content Include="GaugeImages\IamText.txt" />
+    <Content Include="ig_res\Default\ig_calendar.css" />
+    <Content Include="ig_res\Default\ig_calendar2.css" />
+    <Content Include="ig_res\Default\ig_calendarview.css" />
+    <Content Include="ig_res\Default\ig_combo.css" />
+    <Content Include="ig_res\Default\ig_dataGrid.css" />
+    <Content Include="ig_res\Default\ig_datamenu.css" />
+    <Content Include="ig_res\Default\ig_datatree.css" />
+    <Content Include="ig_res\Default\ig_datechooser.css" />
+    <Content Include="ig_res\Default\ig_dayview.css" />
+    <Content Include="ig_res\Default\ig_dialogwindow.css" />
+    <Content Include="ig_res\Default\ig_dropDown.css" />
+    <Content Include="ig_res\Default\ig_grid.css" />
+    <Content Include="ig_res\Default\ig_grid_opt.css" />
+    <Content Include="ig_res\Default\ig_imageViewer.css" />
+    <Content Include="ig_res\Default\ig_listbar.css" />
+    <Content Include="ig_res\Default\ig_menu.css" />
+    <Content Include="ig_res\Default\ig_monthview.css" />
+    <Content Include="ig_res\Default\ig_navbar.css" />
+    <Content Include="ig_res\Default\ig_panel.css" />
+    <Content Include="ig_res\Default\ig_progressbar.css" />
+    <Content Include="ig_res\Default\ig_shared.css" />
+    <Content Include="ig_res\Default\ig_slider.css" />
+    <Content Include="ig_res\Default\ig_spellCheckerDialog.css" />
+    <Content Include="ig_res\Default\ig_splitter.css" />
+    <Content Include="ig_res\Default\ig_tab.css" />
+    <Content Include="ig_res\Default\ig_textedit.css" />
+    <Content Include="ig_res\Default\ig_toolbar.css" />
+    <Content Include="ig_res\Default\ig_tree.css" />
+    <Content Include="ig_res\Default\ig_weekview.css" />
+    <Content Include="ig_res\Default\images\ActiveRowSelector.gif" />
+    <Content Include="ig_res\Default\images\addnewrow.gif" />
+    <Content Include="ig_res\Default\images\addnewrow_image.gif" />
+    <Content Include="ig_res\Default\images\add_disabled.gif" />
+    <Content Include="ig_res\Default\images\add_down.gif" />
+    <Content Include="ig_res\Default\images\add_hover.gif" />
+    <Content Include="ig_res\Default\images\add_up.gif" />
+    <Content Include="ig_res\Default\images\back_horiz.gif" />
+    <Content Include="ig_res\Default\images\back_vert.gif" />
+    <Content Include="ig_res\Default\images\buttonBG.png" />
+    <Content Include="ig_res\Default\images\button_bg.jpg" />
+    <Content Include="ig_res\Default\images\button_officeBlue.gif" />
+    <Content Include="ig_res\Default\images\button_officeBlue.png" />
+    <Content Include="ig_res\Default\images\button_silver.gif" />
+    <Content Include="ig_res\Default\images\Caption_bg.jpg" />
+    <Content Include="ig_res\Default\images\dayheader.jpg" />
+    <Content Include="ig_res\Default\images\day_header.jpg" />
+    <Content Include="ig_res\Default\images\day_header1.gif" />
+    <Content Include="ig_res\Default\images\day_header_active.jpg" />
+    <Content Include="ig_res\Default\images\del_disabled.gif" />
+    <Content Include="ig_res\Default\images\del_down.gif" />
+    <Content Include="ig_res\Default\images\del_hover.gif" />
+    <Content Include="ig_res\Default\images\del_up.gif" />
+    <Content Include="ig_res\Default\images\downarrows_white.gif" />
+    <Content Include="ig_res\Default\images\end_disabled.gif" />
+    <Content Include="ig_res\Default\images\end_down.gif" />
+    <Content Include="ig_res\Default\images\end_hover.gif" />
+    <Content Include="ig_res\Default\images\end_up.gif" />
+    <Content Include="ig_res\Default\images\ff_disabled.gif" />
+    <Content Include="ig_res\Default\images\ff_down.gif" />
+    <Content Include="ig_res\Default\images\ff_hover.gif" />
+    <Content Include="ig_res\Default\images\ff_up.gif" />
+    <Content Include="ig_res\Default\images\fill_horiz.gif" />
+    <Content Include="ig_res\Default\images\fill_vert.gif" />
+    <Content Include="ig_res\Default\images\groupbyHeader.gif" />
+    <Content Include="ig_res\Default\images\header.gif" />
+    <Content Include="ig_res\Default\images\header_hover.gif" />
+    <Content Include="ig_res\Default\images\igdd_DropDownButton.png" />
+    <Content Include="ig_res\Default\images\igdd_DropDownListContainerBG.png" />
+    <Content Include="ig_res\Default\images\igdd_ListItemHover.png" />
+    <Content Include="ig_res\Default\images\igdm_bg_normal.jpg" />
+    <Content Include="ig_res\Default\images\igdm_ControlBackground.png" />
+    <Content Include="ig_res\Default\images\igdm_ItemHover.png" />
+    <Content Include="ig_res\Default\images\igdm_RootHover.png" />
+    <Content Include="ig_res\Default\images\igdt_Blank.gif" />
+    <Content Include="ig_res\Default\images\igdt_First.gif" />
+    <Content Include="ig_res\Default\images\igdt_FirstMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_FirstPlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_folder.gif" />
+    <Content Include="ig_res\Default\images\igdt_folder_open.gif" />
+    <Content Include="ig_res\Default\images\igdt_Last.gif" />
+    <Content Include="ig_res\Default\images\igdt_LastMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_LastPlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Leaf.gif" />
+    <Content Include="ig_res\Default\images\igdt_Line.gif" />
+    <Content Include="ig_res\Default\images\igdt_Middle.gif" />
+    <Content Include="ig_res\Default\images\igdt_MiddleMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_MiddlePlus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Minus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Plus.gif" />
+    <Content Include="ig_res\Default\images\igdt_Single.gif" />
+    <Content Include="ig_res\Default\images\igdt_SingleMinus.gif" />
+    <Content Include="ig_res\Default\images\igdt_SinglePlus.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerBottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerBottomRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerTopLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyCornerTopRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyEdgeBottom.gif" />
+    <Content Include="ig_res\Default\images\igdw_BodyEdgeTop.gif" />
+    <Content Include="ig_res\Default\images\igdw_Bottom.gif" />
+    <Content Include="ig_res\Default\images\igdw_BottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_BottomRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_Close.gif" />
+    <Content Include="ig_res\Default\images\igdw_CloseHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_CloseMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_EdgeLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_EdgeRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderContent.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderCornerLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_HeaderCornerRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_Maximize.gif" />
+    <Content Include="ig_res\Default\images\igdw_MaximizeHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_MaximizeMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_Minimize.gif" />
+    <Content Include="ig_res\Default\images\igdw_MinimizeHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_MinimizeMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_Pin.gif" />
+    <Content Include="ig_res\Default\images\igdw_PinHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_PinMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_ResizingHandle.gif" />
+    <Content Include="ig_res\Default\images\igdw_Restore.gif" />
+    <Content Include="ig_res\Default\images\igdw_RestoreHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_RestoreMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igdw_top.gif" />
+    <Content Include="ig_res\Default\images\igdw_topHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopLeft.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopLeftHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopRight.gif" />
+    <Content Include="ig_res\Default\images\igdw_TopRightHidden.gif" />
+    <Content Include="ig_res\Default\images\igdw_Unpin.gif" />
+    <Content Include="ig_res\Default\images\igdw_UnpinHover.gif" />
+    <Content Include="ig_res\Default\images\igdw_UnpinMouseDown.gif" />
+    <Content Include="ig_res\Default\images\igg_BottomDragIndicator.png" />
+    <Content Include="ig_res\Default\images\igg_Filter.gif" />
+    <Content Include="ig_res\Default\images\igg_FilterApplied.gif" />
+    <Content Include="ig_res\Default\images\igg_filterrow.gif" />
+    <Content Include="ig_res\Default\images\igg_header.gif" />
+    <Content Include="ig_res\Default\images\igg_MiddleDragIndicator.png" />
+    <Content Include="ig_res\Default\images\igg_rowselector.gif" />
+    <Content Include="ig_res\Default\images\igg_Selected.gif" />
+    <Content Include="ig_res\Default\images\igg_sortAsc.gif" />
+    <Content Include="ig_res\Default\images\igg_sortDesc.gif" />
+    <Content Include="ig_res\Default\images\igg_TopDragIndicator.png" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerBottomRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_CornerTopRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeBottom.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeBottom_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeLeft.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeLeft_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeRight.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeRight_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeTop.gif" />
+    <Content Include="ig_res\Default\images\igiv_EdgeTop_Vert.gif" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButton.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_H_NextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButton.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_H_PrevButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButton.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_V_NextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PNextButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButton.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonDisabled.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonHover.png" />
+    <Content Include="ig_res\Default\images\igiv_V_PrevButtonPressed.png" />
+    <Content Include="ig_res\Default\images\igpb_horizontalFill.gif" />
+    <Content Include="ig_res\Default\images\igpb_VerticalFill.gif" />
+    <Content Include="ig_res\Default\images\igpnl_dwn.gif" />
+    <Content Include="ig_res\Default\images\igpnl_up.gif" />
+    <Content Include="ig_res\Default\images\igsch_xpbluedn.gif" />
+    <Content Include="ig_res\Default\images\igsch_xpblueup.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_MinusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_PlusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbDisableH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbDisableV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbFocusH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbFocusV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbHoverH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbHoverV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbPressH.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbPressV.gif" />
+    <Content Include="ig_res\Default\images\igsli_ThumbV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackEdges.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackEdgesV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackFill.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackFillV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdges2H.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdges2V.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdgesH.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueEdgesV.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFill2H.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFill2V.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFillH.gif" />
+    <Content Include="ig_res\Default\images\igsli_TrackValueFillV.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseDown.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseDownHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseLeft.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseLeftHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseRight.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseRightHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseUp.gif" />
+    <Content Include="ig_res\Default\images\igspl_CollapseUpHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandDown.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandDownHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandLeft.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandLeftHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandRight.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandRightHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandUp.gif" />
+    <Content Include="ig_res\Default\images\igspl_ExpandUpHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHoriz.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHorizHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitHorizPressed.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVerPressed.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVert.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVertHover.gif" />
+    <Content Include="ig_res\Default\images\igspl_splitVertPressed.gif" />
+    <Content Include="ig_res\Default\images\igwt_tab_hover.jpg" />
+    <Content Include="ig_res\Default\images\igwt_tab_normal.jpg" />
+    <Content Include="ig_res\Default\images\igwt_tab_selected.jpg" />
+    <Content Include="ig_res\Default\images\ig_cal_next.gif" />
+    <Content Include="ig_res\Default\images\ig_cal_prev.gif" />
+    <Content Include="ig_res\Default\images\ig_checkbox_off.gif" />
+    <Content Include="ig_res\Default\images\ig_checkbox_on.gif" />
+    <Content Include="ig_res\Default\images\ig_checkbox_partial.gif" />
+    <Content Include="ig_res\Default\images\ig_cmboDown1.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDown2.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDownXP1.png" />
+    <Content Include="ig_res\Default\images\ig_cmboDownXP2.png" />
+    <Content Include="ig_res\Default\images\ig_edit_0.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_01.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_1.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_11.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_2.gif" />
+    <Content Include="ig_res\Default\images\ig_edit_21.gif" />
+    <Content Include="ig_res\Default\images\ig_menutri.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrolldown.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrollup.gif" />
+    <Content Include="ig_res\Default\images\ig_menu_scrollup_disabled.gif" />
+    <Content Include="ig_res\Default\images\ig_progressIndicator.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_next.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_prev.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_recurrence.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_reminder.gif" />
+    <Content Include="ig_res\Default\images\ig_sched_variance.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomHover.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomNormal.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_BottomSelected.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll0.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll1.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll2.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scroll3.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP0.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP1.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP2.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_scrollXP3.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopHover.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopNormal.gif" />
+    <Content Include="ig_res\Default\images\ig_tab_TopSelected.gif" />
+    <Content Include="ig_res\Default\images\ig_tblBlank.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilter.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilterApplied.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFilterContains.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotContain.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotEndWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotMatch.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotMatch2.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterDoesNotStartWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterEndsWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterEqual.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterGreaterThan.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterGreaterThanOrEqualTo.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLessThan.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLessThanOrEqualTo.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterLike.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterMatch.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterMatch2.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterNotEqual.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterNotLike.png" />
+    <Content Include="ig_res\Default\images\ig_tblFilterStartsWith.png" />
+    <Content Include="ig_res\Default\images\ig_tblFixedOff.gif" />
+    <Content Include="ig_res\Default\images\ig_tblFixedOn.gif" />
+    <Content Include="ig_res\Default\images\ig_tblGroupBy.gif" />
+    <Content Include="ig_res\Default\images\ig_tblMinus.gif" />
+    <Content Include="ig_res\Default\images\ig_tblNewrow.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPimgDn.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPimgUp.gif" />
+    <Content Include="ig_res\Default\images\ig_tblPlus.gif" />
+    <Content Include="ig_res\Default\images\ig_tblSortAsc.gif" />
+    <Content Include="ig_res\Default\images\ig_tblSortDesc.gif" />
+    <Content Include="ig_res\Default\images\ig_tblTri.gif" />
+    <Content Include="ig_res\Default\images\ig_tblTriEdit.gif" />
+    <Content Include="ig_res\Default\images\ig_treeBlack_box.gif" />
+    <Content Include="ig_res\Default\images\ig_treeDownArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeF.gif" />
+    <Content Include="ig_res\Default\images\ig_treeFminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeFplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeI.gif" />
+    <Content Include="ig_res\Default\images\ig_treeL.gif" />
+    <Content Include="ig_res\Default\images\ig_treeLminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeLplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMinus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMinus2.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMsdn_minus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeMsdn_plus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeOminus.gif" />
+    <Content Include="ig_res\Default\images\ig_treeOplus.gif" />
+    <Content Include="ig_res\Default\images\ig_treePlus.gif" />
+    <Content Include="ig_res\Default\images\ig_treePlus2.gif" />
+    <Content Include="ig_res\Default\images\ig_treeRightArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeS.gif" />
+    <Content Include="ig_res\Default\images\ig_treeT.gif" />
+    <Content Include="ig_res\Default\images\ig_treeTri.gif" />
+    <Content Include="ig_res\Default\images\ig_treeUpArrow.gif" />
+    <Content Include="ig_res\Default\images\ig_treeWhite.gif" />
+    <Content Include="ig_res\Default\images\ig_treeXPMinus.GIF" />
+    <Content Include="ig_res\Default\images\ig_treeXPPlus.GIF" />
+    <Content Include="ig_res\Default\images\ItemBackground.gif" />
+    <Content Include="ig_res\Default\images\next_disabled.gif" />
+    <Content Include="ig_res\Default\images\next_down.gif" />
+    <Content Include="ig_res\Default\images\next_hover.gif" />
+    <Content Include="ig_res\Default\images\next_up.gif" />
+    <Content Include="ig_res\Default\images\officeBlue.jpg" />
+    <Content Include="ig_res\Default\images\office_grid_header.jpg" />
+    <Content Include="ig_res\Default\images\page_bg.jpg" />
+    <Content Include="ig_res\Default\images\prev_disabled.gif" />
+    <Content Include="ig_res\Default\images\prev_down.gif" />
+    <Content Include="ig_res\Default\images\prev_hover.gif" />
+    <Content Include="ig_res\Default\images\prev_up.gif" />
+    <Content Include="ig_res\Default\images\rew_disabled.gif" />
+    <Content Include="ig_res\Default\images\rew_down.gif" />
+    <Content Include="ig_res\Default\images\rew_hover.gif" />
+    <Content Include="ig_res\Default\images\rew_up.gif" />
+    <Content Include="ig_res\Default\images\SelectedRowSelector.gif" />
+    <Content Include="ig_res\Default\images\start_disabled.gif" />
+    <Content Include="ig_res\Default\images\start_down.gif" />
+    <Content Include="ig_res\Default\images\start_hover.gif" />
+    <Content Include="ig_res\Default\images\start_up.gif" />
+    <Content Include="ig_res\Default\images\submit_disable.gif" />
+    <Content Include="ig_res\Default\images\submit_disabled.gif" />
+    <Content Include="ig_res\Default\images\submit_down.gif" />
+    <Content Include="ig_res\Default\images\submit_hover.gif" />
+    <Content Include="ig_res\Default\images\submit_up.gif" />
+    <Content Include="ig_res\Default\images\tabBG.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_hover.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_hover_F.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_normal.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_normal_F.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_selected.jpg" />
+    <Content Include="ig_res\Default\images\tabbottom_selected_f.jpg" />
+    <Content Include="ig_res\Default\images\tabtob_selected_f.jpg" />
+    <Content Include="ig_res\Default\images\tabtop_hover_F.jpg" />
+    <Content Include="ig_res\Default\images\tabtop_normal_F.jpg" />
+    <Content Include="ig_res\Default\images\tab_bottom.gif" />
+    <Content Include="ig_res\Default\images\tab_bottom_f.gif" />
+    <Content Include="ig_res\Default\images\tab_bottom_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_left.gif" />
+    <Content Include="ig_res\Default\images\tab_left_f.gif" />
+    <Content Include="ig_res\Default\images\tab_left_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_left_hover_f.gif" />
+    <Content Include="ig_res\Default\images\tab_left_normal.gif" />
+    <Content Include="ig_res\Default\images\tab_left_normal_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right.gif" />
+    <Content Include="ig_res\Default\images\tab_right_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right_hover.gif" />
+    <Content Include="ig_res\Default\images\tab_right_hover_f.gif" />
+    <Content Include="ig_res\Default\images\tab_right_normal.gif" />
+    <Content Include="ig_res\Default\images\tab_right_normal_f.gif" />
+    <Content Include="ig_res\Default\images\tab_top.gif" />
+    <Content Include="ig_res\Default\images\tab_top_f.gif" />
+    <Content Include="ig_res\Default\images\tab_top_hover.gif" />
+    <Content Include="ig_res\Default\images\uparrows_white.gif" />
+    <Content Include="ig_res\ElectricBlue\ig_calendar.css" />
+    <Content Include="ig_res\ElectricBlue\ig_calendarview.css" />
+    <Content Include="ig_res\ElectricBlue\ig_combo.css" />
+    <Content Include="ig_res\ElectricBlue\ig_dataGrid.css" />
+    <Content Include="ig_res\ElectricBlue\ig_datamenu.css" />
+    <Content Include="ig_res\ElectricBlue\ig_datatree.css" />
+    <Content Include="ig_res\ElectricBlue\ig_datechooser.css" />
+    <Content Include="ig_res\ElectricBlue\ig_dayview.css" />
+    <Content Include="ig_res\ElectricBlue\ig_dialogwindow.css" />
+    <Content Include="ig_res\ElectricBlue\ig_dropDown.css" />
+    <Content Include="ig_res\ElectricBlue\ig_grid.css" />
+    <Content Include="ig_res\ElectricBlue\ig_grid_opt.css" />
+    <Content Include="ig_res\ElectricBlue\ig_imageViewer.css" />
+    <Content Include="ig_res\ElectricBlue\ig_listbar.css" />
+    <Content Include="ig_res\ElectricBlue\ig_menu.css" />
+    <Content Include="ig_res\ElectricBlue\ig_monthview.css" />
+    <Content Include="ig_res\ElectricBlue\ig_navbar.css" />
+    <Content Include="ig_res\ElectricBlue\ig_panel.css" />
+    <Content Include="ig_res\ElectricBlue\ig_progressbar.css" />
+    <Content Include="ig_res\ElectricBlue\ig_shared.css" />
+    <Content Include="ig_res\ElectricBlue\ig_slider.css" />
+    <Content Include="ig_res\ElectricBlue\ig_spellCheckerDialog.css" />
+    <Content Include="ig_res\ElectricBlue\ig_splitter.css" />
+    <Content Include="ig_res\ElectricBlue\ig_tab.css" />
+    <Content Include="ig_res\ElectricBlue\ig_textedit.css" />
+    <Content Include="ig_res\ElectricBlue\ig_toolbar.css" />
+    <Content Include="ig_res\ElectricBlue\ig_tree.css" />
+    <Content Include="ig_res\ElectricBlue\ig_weekview.css" />
+    <Content Include="ig_res\ElectricBlue\images\ActiveRowSelector.gif" />
+    <Content Include="ig_res\ElectricBlue\images\activingBG.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\addnewrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\addnewrow_image.gif" />
+    <Content Include="ig_res\ElectricBlue\images\add_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\add_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\add_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\add_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\altBG.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\bg_top.gif" />
+    <Content Include="ig_res\ElectricBlue\images\blank.gif" />
+    <Content Include="ig_res\ElectricBlue\images\button_bg.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\button_bg.png" />
+    <Content Include="ig_res\ElectricBlue\images\day_header.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\del_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\del_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\del_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\del_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\downarrows_white.gif" />
+    <Content Include="ig_res\ElectricBlue\images\end_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\end_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\end_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\end_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ff_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ff_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ff_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ff_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\gradient.gif" />
+    <Content Include="ig_res\ElectricBlue\images\header.gif" />
+    <Content Include="ig_res\ElectricBlue\images\header_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\header_silver.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdd_DropDownButton.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdd_DropDownButton_Hover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdd_DropDownListContainerBG.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdd_ListItemHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdm_ItemHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdm_RootHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Blank.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_First.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_FirstMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_FirstPlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Last.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_LastMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_LastPlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Leaf.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Line.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Middle.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_MiddleMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_MiddlePlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Minus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Plus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_Single.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_SingleMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdt_SinglePlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Bottom.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_BottomLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_BottomRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Close.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_CloseHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_CloseMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_EdgeLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_EdgeRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Maximize.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_MaximizeHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_MaximizeMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Minimize.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_MinimizeHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_MinimizeMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Pin.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_PinHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_PinMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_ResizingHandle.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Restore.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_RestoreHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_RestoreMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_top.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_topHidden.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_TopLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_TopLeftHidden.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_TopRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_TopRightHidden.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_Unpin.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_UnpinHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igdw_UnpinMouseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_BottomDragIndicator.png" />
+    <Content Include="ig_res\ElectricBlue\images\igg_Filter.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_FilterApplied.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_filterrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_header.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_MiddleDragIndicator.png" />
+    <Content Include="ig_res\ElectricBlue\images\igg_Selected.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_sortAsc.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_sortDesc.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igg_TopDragIndicator.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerBottomLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerBottomLeft_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerBottomRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerBottomRight_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerTopLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerTopLeft_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerTopRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_CornerTopRight_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeBottom.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeBottom_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeLeft_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeRight_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeTop.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_EdgeTop_Vert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_NextButton.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_NextButtonDisabled.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_NextButtonHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_NextButtonPressed.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_PrevButton.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_PrevButtonDisabled.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_PrevButtonHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_H_PrevButtonPressed.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_NextButton.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_NextButtonDisabled.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_NextButtonHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_NextButtonPressed.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_PrevButton.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_PrevButtonDisabled.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_PrevButtonHover.png" />
+    <Content Include="ig_res\ElectricBlue\images\igiv_V_PrevButtonPressed.png" />
+    <Content Include="ig_res\ElectricBlue\images\igpb_horizontalFill.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igpb_VerticalFill.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igpnl_dwn.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igpnl_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsch_xpbluedn.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsch_xpblueup.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusDisableH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusDisableV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusFocusH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusFocusV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusHoverH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusHoverV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusPressH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusPressV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_MinusV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusDisableH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusDisableV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusFocusH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusFocusV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusHoverH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusHoverV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusPressH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusPressV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_PlusV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbDisableH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbDisableV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbFocusH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbFocusV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbHoverH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbHoverV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbPressH.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbPressV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_ThumbV.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_TrackEdges.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igsli_TrackFill.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseDownHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseLeftHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseRightHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseUp.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_CollapseUpHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandDown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandDownHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandLeft.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandLeftHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandRight.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandRightHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandUp.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_ExpandUpHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitHoriz.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitHorizHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitHorizPressed.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitVerPressed.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitVert.gif" />
+    <Content Include="ig_res\ElectricBlue\images\igspl_splitVertHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cal_next.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cal_prev.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_checkbox_off.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_checkbox_on.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_checkbox_partial.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cmboDown1.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cmboDown2.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cmboDownXP1.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_cmboDownXP2.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_0.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_01.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_1.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_11.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_2.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_edit_21.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_menutri.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_menu_scrolldown.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_menu_scrollup.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_menu_scrollup_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_progressIndicator.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_sched_next.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_sched_prev.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_sched_recurrence.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_sched_reminder.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_sched_variance.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_BottomHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_BottomNormal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_BottomSelected.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scroll0.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scroll1.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scroll2.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scroll3.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scrollXP0.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scrollXP1.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scrollXP2.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_scrollXP3.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_TopHover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_TopNormal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tab_TopSelected.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblBlank.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilter.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterApplied.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterContains.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterDoesNotContain.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterDoesNotEndWith.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterDoesNotMatch.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterDoesNotMatch2.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterDoesNotStartWith.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterEndsWith.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterEqual.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterGreaterThan.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterGreaterThanOrEqualTo.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterLessThan.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterLessThanOrEqualTo.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterLike.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterMatch.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterMatch2.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterNotEqual.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterNotLike.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFilterStartsWith.png" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFixedOff.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblFixedOn.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblGroupBy.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblNewrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblPimgDn.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblPimgUp.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblPlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblSortAsc.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblSortDesc.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblTri.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_tblTriEdit.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeBlack_box.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeDownArrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeF.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeFaq_leaf.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeFminus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeFplus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeI.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeL.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeLminus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeLplus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMinus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMinus2.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMminus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMplus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMsdn_minus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeMsdn_plus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeOminus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeOplus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treePlus.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treePlus2.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeright.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeRightArrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeS.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeT.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeTri.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeUpArrow.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeWhite.gif" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeXPMinus.GIF" />
+    <Content Include="ig_res\ElectricBlue\images\ig_treeXPPlus.GIF" />
+    <Content Include="ig_res\ElectricBlue\images\ItemBackground.gif" />
+    <Content Include="ig_res\ElectricBlue\images\itemBG.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\label.gif" />
+    <Content Include="ig_res\ElectricBlue\images\next_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\next_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\next_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\next_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\page_bg.jpg" />
+    <Content Include="ig_res\ElectricBlue\images\prev_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\prev_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\prev_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\prev_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\rew_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\rew_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\rew_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\rew_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\SelectedRowSelector.gif" />
+    <Content Include="ig_res\ElectricBlue\images\start_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\start_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\start_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\start_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\submit_disable.gif" />
+    <Content Include="ig_res\ElectricBlue\images\submit_disabled.gif" />
+    <Content Include="ig_res\ElectricBlue\images\submit_down.gif" />
+    <Content Include="ig_res\ElectricBlue\images\submit_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\submit_up.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom_hover_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom_normal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_bottom_normal_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_hover_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_normal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_normal_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_left_right_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_right.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_right_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_right_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_right_normal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_right_normal_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top_hover.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top_hover_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top_normal.gif" />
+    <Content Include="ig_res\ElectricBlue\images\tab_top_normal_f.gif" />
+    <Content Include="ig_res\ElectricBlue\images\uparrows_white.gif" />
+    <Content Include="js\jquery-ui.datepicker.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\jquery.blockui.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reporting\GroupDCSORP.aspx" />
+    <Content Include="Reporting\PRSABenefitStatement.aspx" />
+    <Content Include="Reporting\PRSASORPNewBusiness.aspx" />
+    <Content Include="Reporting\PRSASORP.aspx" />
+    <Content Include="Graphics\adobe.gif" />
+    <Content Include="Graphics\AGBScientific.gif" />
+    <Content Include="Graphics\Airbus.gif" />
+    <Content Include="Graphics\airtricity.gif" />
+    <Content Include="Graphics\allergan.gif" />
+    <Content Include="Graphics\Alliedbacktotop.gif" />
+    <Content Include="Graphics\Alliedbullet.gif" />
+    <Content Include="Graphics\AlliedTopRightCorner.gif" />
+    <Content Include="Graphics\AOL.gif" />
+    <Content Include="Graphics\AOLtech.gif" />
+    <Content Include="Graphics\APT.gif" />
+    <Content Include="Graphics\backtotop.gif" />
+    <Content Include="Graphics\benchmark.gif" />
+    <Content Include="Graphics\BigMember.gif" />
+    <Content Include="Graphics\Bisys.gif" />
+    <Content Include="Graphics\BottomLeftCorner.gif" />
+    <Content Include="Graphics\BottomRightCorner.gif" />
+    <Content Include="Graphics\bullet.gif" />
+    <Content Include="Graphics\BWBank.gif" />
+    <Content Include="Graphics\ChasePayment.gif" />
+    <Content Include="Graphics\citi.gif" />
+    <Content Include="Graphics\Decare.gif" />
+    <Content Include="Graphics\Default.gif" />
+    <Content Include="Graphics\DoubleClick.gif" />
+    <Content Include="Graphics\EuroHeaderBG.gif" />
+    <Content Include="Graphics\FTI.gif" />
+    <Content Include="Graphics\Gleeson.gif" />
+    <Content Include="Graphics\Glonav.gif" />
+    <Content Include="Graphics\hsbc.gif" />
+    <Content Include="Graphics\inamed.gif" />
+    <Content Include="Graphics\Intel.gif" />
+    <Content Include="Graphics\Lake.gif" />
+    <Content Include="Graphics\LBBW.gif" />
+    <Content Include="Graphics\Lisney.gif" />
+    <Content Include="Graphics\Login.gif" />
+    <Content Include="Graphics\LoginBackground.gif" />
+    <Content Include="Graphics\LoginBG.gif" />
+    <Content Include="Graphics\lundintnl.gif" />
+    <Content Include="Graphics\McInerney.gif" />
+    <Content Include="Graphics\Member.gif" />
+    <Content Include="Graphics\Novell.gif" />
+    <Content Include="Graphics\Odlums.gif" />
+    <Content Include="Graphics\Parthus.gif" />
+    <Content Include="Graphics\portofcork.gif" />
+    <Content Include="Graphics\PWA.gif" />
+    <Content Include="Graphics\QBE.gif" />
+    <Content Include="Graphics\Redmere.gif" />
+    <Content Include="Graphics\Rehab.gif" />
+    <Content Include="Graphics\Renaissance.gif" />
+    <Content Include="Graphics\Sandisk.gif" />
+    <Content Include="Graphics\sicon.gif" />
+    <Content Include="Graphics\TDK.gif" />
+    <Content Include="Graphics\TopRightCorner.gif" />
+    <Content Include="Graphics\Trinity.gif" />
+    <Content Include="Graphics\uchiya.gif" />
+    <Content Include="Graphics\USIT.gif" />
+    <Content Include="Graphics\Vector.gif" />
+    <Content Include="Graphics\VetIreland.gif" />
+    <Content Include="Graphics\VWR.gif" />
+    <Content Include="Graphics\Wellman.gif" />
+    <Content Include="Graphics\xtratherm.gif" />
+    <Content Include="InvestmentStrategy.aspx" />
+    <Content Include="js\apt-common.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\jquery.validate.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reporting\ARFInvestmentStatement.aspx" />
+    <Content Include="Reporting\ContributionSchedule.aspx" />
+    <Content Include="js\jquery.highlightFade.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\CSSFriendly.dll" />
+    <Content Include="Reporting\Download.aspx" />
+    <Content Include="Reporting\LeavingServiceOptions.aspx" />
+    <Content Include="SchemeOverview.aspx" />
+    <Content Include="PensionCalculator.aspx" />
+    <Content Include="Trustee\TrusteeContributionRates.aspx" />
+    <Content Include="Trustee\TrusteeCurrentValue.aspx" />
+    <Content Include="Trustee\TrusteeInvestmentAllocation.aspx" />
+    <Content Include="Trustee\TrusteeLeavers.aspx" />
+    <Content Include="Trustee\TrusteeNPD.aspx" />
+    <Content Include="Trustee\TrusteeSchemeMemberDetails.aspx" />
+    <Content Include="Trustee\TrusteeTransferIn.aspx" />
+    <Content Include="Trustee\TrusteeUnitPriceHistory.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APT.Model\APT.Model.csproj">
+      <Project>{EC7846B8-D9B3-4801-9DDE-14750A4956D5}</Project>
+      <Name>APT.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APT.UTIL\APTUTILPROJ.csproj">
+      <Project>{C4A2173D-A146-43F3-9EC3-6CBC6BFF389B}</Project>
+      <Name>APTUTILPROJ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APTIPPPDataModel\APTIPPPDataModel.csproj">
+      <Project>{80715A64-9A38-4FE7-AE67-69A6AA727A18}</Project>
+      <Name>APTIPPPDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11118</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

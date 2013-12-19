@@ -1,0 +1,379 @@
+/*
+
+Main control CSS class
+*/
+.igdd_ElectricBlueControl
+{
+}
+
+.igdd_ElectricBlueControlArea
+{
+	border: 1px solid #062784;
+	table-layout: fixed;
+}
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdd_ElectricBlueControlDisabled
+{
+}
+
+/*
+ Main control css class on hover
+*/
+.igdd_ElectricBlueControlHover
+{
+	background-color: #E6EEF7;
+}
+
+/*
+Loading message container
+*/
+.igdd_ElectricBlueLoadingItemsMessage
+{
+	background-color: #1f6198;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	margin: 1px 0px 0px 1px;
+	padding: 3px;
+	color: #FFFFFF;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueControlFocus
+{	
+	background-color: #E6EEF7;
+	border: 1px solid #062784;
+	table-layout: fixed;
+}
+
+/*
+ CSS class for the table that accomodates the value display and the drop down button, and which is a 
+ child of the main control (div)
+*/
+.igdd_ElectricBlueValueDisplayTable
+{
+
+}
+
+/*
+CSS class for the actual input field (<input type="text" />)
+*/
+.igdd_ElectricBlueValueDisplay
+{
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	border: 0px;
+	background-color: Transparent;
+	z-index: 0;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueValueDisplayHover
+{
+}
+
+/*
+
+*/
+.igdd_ElectricBlueValueDisplayFocus
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueValueDisplayDisabled
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueValueDisplayReadOnly
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownList
+{
+	margin: 0px;
+	padding: 1px;
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListHover
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListDisabled
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListFocus
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListReadOnly
+{
+	
+}
+
+/*
+	
+*/
+.igdd_ElectricBlueDropDownListContainer
+{
+	float: left;
+	border: 1px solid #062784;
+	background-color: #FFFFFF;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListContainerFocus
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownListContainerHover
+{
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownButton
+{
+	width: 17px;
+	z-index: 9999;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownButtonHover
+{
+	background-image:url(images/igdd_DropDownButton_Hover.png);
+}
+
+/*
+	
+*/
+.igdd_ElectricBlueDropDownButtonFocus
+{
+	
+}
+
+/*
+
+*/
+.igdd_ElectricBlueDropDownButtonDisabled
+{
+	
+}
+
+/*
+CSS class that controls the style of the LI items in the list
+*/
+.igdd_ElectricBlueListItem
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	list-style-type: none;
+	padding: 3px 5px 3px 5px;
+	border:solid 1px Transparent;
+	cursor: pointer;
+	width: auto;
+	min-height: 15px;
+	height: auto !important;
+}
+
+.igdd_ElectricBlueListItem a:link
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+.igdd_ElectricBlueListItem a:visited
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueListItemSelected
+{
+	list-style-type: none;
+	background-color: #e7f6fd;
+	color: #18265B;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueListItemActive
+{
+	list-style-type: none;
+	background-color: #E6EEF7;
+	border: solid 1px #A6C4E0;
+}
+
+.igdd_ElectricBlueListItemActive a:link
+{
+	text-decoration: none;
+	color: #18265B;
+}
+
+/*
+
+*/
+.igdd_ElectricBlueListItemHover
+{
+	list-style-type: none;
+	background-color: #e7f6fd;
+	background-image:url(images/igdd_ListItemHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	border: solid 1px #A6C4E0;
+}
+
+/*
+Styling for anchor when hovered anywhere on ListItem
+*/
+.igdd_ElectricBlueListItemHover a:link
+{
+	text-decoration: none;
+	color: #18265B;
+}
+
+
+
+/*
+
+*/
+.igdd_ElectricBlueListItemDisabled
+{
+	list-style-type: none;
+	width: auto;
+	cursor: default;
+}
+
+/*
+For Disabled=True of a DropDownItem
+*/
+.igdd_ElectricBlueListItemDisabled a:link
+{
+	color: #BBBBBB;
+	cursor: default;
+}
+
+.igdd_ElectricBlueListItem a:link
+{
+}
+
+.igdd_ElectricBlueListItem a:visited
+{
+}
+
+.igdd_ElectricBlueListItem a:active
+{
+}
+
+.igdd_ElectricBlueListItem a:hover
+{
+}
+
+/*
+
+*/
+.igdd_ElectricBlueListItemFocus
+{
+	list-style-type: none;
+	width: auto;
+}
+
+/*
+Applied to the whole pager
+*/
+.igdd_ElectricBluePager
+{
+	float: left;
+	padding: 5px;
+	background-color: #EEF3F9;
+	text-align: right;
+	vertical-align: middle;
+}
+
+/*
+Styles all page links in general 
+*/
+.igdd_ElectricBluePageLink
+{
+	float: left;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 5px;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+/*
+Styles the current page link only
+*/
+.igdd_ElectricBluePageCurrent
+{
+	float: left;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 5px;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1f6198;
+	text-decoration: underline;
+}
+
+/*
+pseudo class used so Value Display input does not have focus
+glow in some browsers like GoogleChrome or AppleSafari
+*/
+input:focus
+{  
+	outline: none;  
+} 

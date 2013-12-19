@@ -1,0 +1,79 @@
+.igdt_ElectricBlueControl {
+	background-color:transparent;
+	border:1px solid transparent;
+	color:#2F3660;
+	font-size: xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.igdt_ElectricBlueControlActive {
+}
+
+.igdt_ElectricBlueNode
+{
+	cursor:hand;
+	color:#2F3660;
+	text-decoration:none;	
+	padding:1px 3px 1px 3px;
+	line-height: 15px;
+	
+}
+
+.igdt_ElectricBlueNodeRoot {
+	font-weight:bold;
+	color:#2F3660;
+
+}
+
+.igdt_ElectricBlueNodeImage {	
+	vertical-align: middle;
+}
+
+.igdt_ElectricBlueNodeSelected {
+	background-color:#A6C4E0;
+}
+
+.igdt_ElectricBlueNodeActive 
+{
+	border:1px solid #A6C4E0;
+	padding: 0px 3px 0px 2px;
+}
+
+.igdt_ElectricBlueNodeHover {
+	background-color:#C8E6F1;
+}
+
+.igdt_ElectricBlueNodeDisabled
+{
+	color:Gray;
+}
+
+.igdt_ElectricBlueInternalNodeEditor
+{
+	border:1px solid #A6C4E0;
+	padding-left: 2px;
+}
+
+
+/* //////////////////// GROUP STYLES //////////////////// */
+.igdt_ElectricBlueNodeGroup {
+	list-style :none;	
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.igdt_ElectricBlueNodeHolder {
+	white-space:nowrap;
+	/*margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;*/
+}
+
+
+.igdt_ElectricBlueNodeHolder img {
+	vertical-align: middle;
+}
+
+/* //////////////////// GROUP STYLES //////////////////// */

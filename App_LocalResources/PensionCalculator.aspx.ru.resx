@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Для обеспечения</value>
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>(A) Члены пенсии</value>
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>окончательного оклада</value>
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>ИЛИ</value>
+  </data>
+  <data name="Label14Resource1.Text" xml:space="preserve">
+    <value>(B) Tax Free Единовременно в</value>
+  </data>
+  <data name="Label15Resource1.Text" xml:space="preserve">
+    <value>окончательного оклада</value>
+  </data>
+  <data name="Label16Resource1.Text" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="Label17Resource1.Text" xml:space="preserve">
+    <value>(Б) уменьшение пенсии</value>
+  </data>
+  <data name="Label18Resource1.Text" xml:space="preserve">
+    <value>окончательного оклада</value>
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Далее Ваш возраст</value>
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Текущие Зарплата</value>
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Вклад в год</value>
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Пенсионного возраста</value>
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Существующие Пенсионного Значение</value>
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Задача пенсиям</value>
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Tax Free Единовременно</value>
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Ориентировочная Пенсионного фонда в возрасте</value>
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Ориентировочная Заключительный Зарплата на возраст</value>
+  </data>
+  <data name="lblConfigureYourPensionResource1.Text" xml:space="preserve">
+    <value>Настройте свою пенсию</value>
+  </data>
+  <data name="lblPageHeaderBylineResource1.Text" xml:space="preserve">
+    <value>Рассчитать свою пенсию, когда вы достигнете пенсионного возраста</value>
+  </data>
+  <data name="lblPageHeaderResource1.Text" xml:space="preserve">
+    <value>Пенсионный калькулятор</value>
+  </data>
+  <data name="LblPensionCalcInfoResource1.Text" xml:space="preserve">
+    <value>% Последней зарплаты, дополнительные пенсионный взнос необходимым увеличение на 5% годовых для финансирования дефицита, или 5% от текущего оклада в год &lt;BR/&gt; Приведенные выше расчеты только для примера и не гарантируется. &lt;BR/&gt; Если вам потребуется дополнительная информация, пожалуйста, свяжитесь с нами по тел: 01 - 2063010 или по электронной почте: contact@alliedpensions.com &lt;BR/&gt;&lt;BR/&gt; Примечания: &lt;BR/&gt; 1. Зарплата и взносы предполагается увеличить на 5%% годовых в период до достижения пенсионного возраста. &lt;BR/&gt; 2. Пенсионный фонд, как предполагается, увеличится на 7% в год до достижения пенсионного возраста. &lt;BR/&gt; 3. Пенсионный цитирует является единым пожизненная пенсия, увеличивая каждый год в оплате на 3% годовых &lt;BR/&gt; 4. Государство пенсионных пособиях стали выплачиваться с 65 лет.</value>
+  </data>
+  <data name="lblPensionResultsResource1.Text" xml:space="preserve">
+    <value>Пенсионный Результаты</value>
+  </data>
+  <data name="lblPerAnum2Resource1.Text" xml:space="preserve">
+    <value>годовых</value>
+  </data>
+  <data name="lblPerAnum3Resource1.Text" xml:space="preserve">
+    <value>годовых</value>
+  </data>
+  <data name="lblPerAnum4Resource1.Text" xml:space="preserve">
+    <value>годовых</value>
+  </data>
+  <data name="lblPerAnumResource1.Text" xml:space="preserve">
+    <value>годовых</value>
+  </data>
+  <data name="lblPercOfFinalSalResource1.Text" xml:space="preserve">
+    <value>% Последней заработной платы</value>
+  </data>
+  <data name="lblTargetBenefitResource1.Text" xml:space="preserve">
+    <value>Цель пособия:</value>
+  </data>
+  <data name="lblTargetPensionResource1.Text" xml:space="preserve">
+    <value>Задача пенсиям</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="ListItemResource45.Value" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="ListItemResource46.Value" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="ListItemResource47.Value" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="ListItemResource48.Value" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="sliderContributionsResource1.MinusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderContributionsResource1.PlusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderContributionsResource1.SecondaryThumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderContributionsResource1.Thumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderRetirementAgeResource1.MinusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderRetirementAgeResource1.PlusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderRetirementAgeResource1.SecondaryThumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderRetirementAgeResource1.Thumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTargetPensionResource1.MinusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTargetPensionResource1.PlusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTargetPensionResource1.SecondaryThumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTargetPensionResource1.Thumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTaxFreeLumpResource1.MinusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTaxFreeLumpResource1.PlusButton.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTaxFreeLumpResource1.SecondaryThumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+  <data name="sliderTaxFreeLumpResource1.Thumb.AltText" xml:space="preserve">
+    <value>[По умолчанию]</value>
+  </data>
+</root>

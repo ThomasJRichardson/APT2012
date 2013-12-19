@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="APT2012.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link rel="SHORTCUT ICON" href="~/APTTHEME/APT01/images/APTicon.ico" />    
+	    
+    <link rel="stylesheet" type="text/css" media="screen,print" href="~/APTTHEME/APT01/APTStyleContent.css" />    
+    <link rel="stylesheet" type="text/css" media="print" href="~/APTTHEME/APT01/APTStylePrint.css" />
+ 
+    <script type='text/javascript' src='<%# ResolveUrl ("js/jquery-1.7.2.js") %>'></script>
+    <script type="text/javascript" src='<%# ResolveUrl ("js/jquery.blockui.js") %>'></script>
+    <script type="text/javascript" src='<%# ResolveUrl ("js/apt-common.js") %>'></script>
+    <script type="text/javascript" src='<%# ResolveUrl ("js/jquery-ui.min.js") %>'></script>
+
+    <script type="text/javascript" language="javascript">
+
+        function loadSchemes() {
+
+            $("<option>").attr("value", "0").text("Loading...").appendTo("#ddlActiveSchemes");
+
+            $.ajax({
+                type: "POST",
+                url: '<%# ResolveUrl ("APTAjax.aspx") %>/SchemeGet',
+                data: "{}",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function(msg) {
+                    var sbox = document.getElementById("ddlActiveSchemes");
+                    $("#ddlActiveSchemes").html("");
+                    $("<option>").attr("value", "0").text("-- Choose Scheme --").appendTo("#ddlActiveSchemes");
+                    $.each(msg.d.Table1, function(i, scheme) {
+                        sbox.options[sbox.options.length] = new Option(scheme.SchemeName, scheme.SchemeId);
+                    });
+                },
+                ajaxError: function(msg) {
+                    alert("Error: " + msg);
+                }
+            });
+        }
+
+        function loadMembers() {
+
+            $("<option>").attr("value", "0").text("Loading...").appendTo("#ddlSchemeMembers");
+
+            $.ajax({
+                type: "POST",
+                url: '<%# ResolveUrl ("APTAjax.aspx") %>/SchemeMemberGet',
+                data: "{}",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function(msg) {
+                    var sbox = document.getElementById("ddlSchemeMembers");
+                    $("#ddlSchemeMembers").html("");
+                    $("<option>").attr("value", "0").text("-- Choose Member --").appendTo("#ddlSchemeMembers");
+                    $.each(msg.d.Members, function(i, member) {
+                        sbox.options[sbox.options.length] = new Option(member.MemberName, member.MemberId);
+                    });
+                },
+                ajaxError: function(msg) {
+                    alert("Error: " + msg);
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#member-change").click(function() {
+                $("#member-choose").show();
+                $("#member-label").hide();
+                loadMembers();
+            });
+
+            $("#scheme-change").click(function() {
+                $("#scheme-choose").show();
+                $("#scheme-label").hide();
+                loadSchemes();
+            });
+
+            $("#ddlActiveSchemes").change(function() {
+                $.blockUI({ message: "<div class='loading'>Switching Scheme, please wait...</div>" });
+                $.ajax({
+                    type: "POST",
+                    url: '<%# ResolveUrl ("APTAjax.aspx") %>/SchemeSelect',
+                    data: "{'schemeid':'" + $("#ddlActiveSchemes").val() + "'}",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function(msg) {
+                        location.reload(true);
+                    },
+                    ajaxError: function(msg) {
+                        alert("Error: " + msg);
+                    }
+                });
+            });
+
+            $("#ddlSchemeMembers").change(function() {
+                $.blockUI({ message: "<div class='loading'>Switching Member, please wait...</div>" });
+                $.ajax({
+                    type: "POST",
+                    url: '<%# ResolveUrl ("APTAjax.aspx") %>/SchemeMemberSelect',
+                    data: "{'memberid':'" + $("#ddlSchemeMembers").val() + "'}",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function(msg) {
+                        location.reload(true);
+                    },
+                    ajaxError: function(msg) {
+                        alert("Error: " + msg);
+                    }
+                });
+            });
+
+        });
+    
+    </script>
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div class="top clear">
+            <div class="left">
+                <h1>
+                    <span>
+                        <asp:Label ID="lblAPTOnline" runat="server" Text=" APT Online" meta:resourcekey="lblAPTOnlineResource1"></asp:Label></span></h1>
+                <div class="topnav">
+                    <asp:Repeater runat="server" ID="siteMapAsBulletedList">
+                        <HeaderTemplate>
+                            <ul>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <li class='<%# checkNode(Eval("Url").ToString()) %>'><a href='<%# Eval("Url") %>'>
+                                <%# Eval("Title") %></a></li>
+                        </ItemTemplate>
+                        <FooterTemplate>
+                            </ul>
+                        </FooterTemplate>
+                    </asp:Repeater>
+                    <div class="profile">
+                        <asp:Label ID="lblLoggedInAs" runat="server" Text="Logged in as " 
+                            meta:resourcekey="lblLoggedInAsResource1"></asp:Label>
+                        <asp:Label ID="lblFullName" runat="server" 
+                            meta:resourcekey="lblFullNameResource1" />
+                        (<asp:LoginStatus ID="LoginStatus1" runat="server" 
+                            LogoutAction="RedirectToLoginPage" OnLoggedOut="logout_LoggedOut" meta:resourcekey="LoginStatus1Resource1" />
+                        )
+                    </div>
+                </div>
+            </div>
+            <div class="companyimage">
+                <asp:Image ImageUrl="Graphics/APT.gif" ID="imgCompanyLogo" runat="server" 
+                    meta:resourcekey="imgCompanyLogoResource1" />
+            </div>
+        </div>
+        <!-- End top -->
+        <div class="scheme-selection clear">
+            <div class="left">
+                <asp:Label ID="lblMemberName" Font-Bold="True" runat="server" Text="Member Name:" meta:resourcekey="lblMemberNameResource1" />
+                <span id="member-label">
+                    <asp:Label ID="lblMemberNameValue" runat="server" meta:resourcekey="lblMemberNameValueResource1" />
+                    <asp:Literal ID="litMemberChange" runat="server" meta:resourcekey="litMemberChangeResource1" /></span> 
+                    <span style="display: none;" id="member-choose">
+                        <select id="ddlSchemeMembers">
+                        </select>
+                    </span>
+            </div>
+            <div class="right">
+                <asp:Label ID="lblSchemeName" Font-Bold="True" runat="server" 
+                    Text="Scheme Name: " meta:resourcekey="lblSchemeNameResource1"></asp:Label>
+                <span id="scheme-label">
+                    <asp:Label ID="lblActiveSchemesValue" runat="server" 
+                    meta:resourcekey="lblActiveSchemesValueResource1"></asp:Label>
+                    <asp:Literal runat="server" ID="litSchemeChange" 
+                    meta:resourcekey="litSchemeChangeResource1" /></span><span style="display: none;"
+                        id="scheme-choose">
+                        <select id="ddlActiveSchemes">
+                        </select>
+                    </span>
+            </div>
+        </div>
+        <div id="main" class="clear">
+            <div class="nav">
+
+                <asp:Repeater runat="server" ID="rptSideNav" OnItemDataBound="RemoveNonVisibleItemsRpt">
+                    <HeaderTemplate>
+                        <ul>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <li><a href='<%# Eval("Url") %>' class='<%# checkNode(Eval("Url").ToString()) %>'>
+                            <%# Eval("Title") %></a></li>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </ul>
+                    </FooterTemplate>
+                </asp:Repeater>
+                
+            </div>
+            <div class="content clear">
+                <div class="contentheader clear icon">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderPageTitle" runat="server">
+                        <div class="icondefault">
+                            <! -- Change for Specific Icons -->
+                            <h2>
+                                <asp:Label runat="server" ID="lblPageHeader" Text="Page Title" 
+                                    meta:resourcekey="lblPageHeaderResource1" /></h2>
+                            <p class="h2-line">
+                                <asp:Label runat="server" ID="lblPageHeaderByline" 
+                                    Text="Insert Byline content here" 
+                                    meta:resourcekey="lblPageHeaderBylineResource1" /></p>
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="contentbody clear">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">                    
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="footer clear">
+                    <asp:Label ID="lblFooter" runat="server" 
+                        Text="APT Financial Services Limited (t/a Allied Pension Trustees) is regulated by the Central Bank of Ireland."></asp:Label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <p style="display: none">
+        <textarea id="template-schemes" rows="0" cols="0"><![CDATA[ 
+                    {#foreach $T.Table1 as post}
+                    <option> value="{$T.post.SchemeId}">{$T.post.SchemeName}</option>
+                    {#/for}
+        ]]></textarea>
+    </p>
+        
+        <%   
+#if DEBUG 
+    //Don't Track PageViews 
+#else       
+            //Don't Track Views by any user in APT Admin role
+            if (!HttpContext.Current.User.IsInRole("APT Admin"))
+            {
+             %>
+        
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-23017122-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<%
+            }
+#endif
+     %>
+
+</body>
+</html>

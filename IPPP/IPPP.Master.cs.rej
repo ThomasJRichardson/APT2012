@@ -1,0 +1,10 @@
+diff a/Web Site/APT.SOLUTION/APT2012/IPPP/IPPP.Master.cs b/Web Site/APT.SOLUTION/APT2012/IPPP/IPPP.Master.cs	(rejected hunks)
+@@ -10,6 +10,8 @@
+ {
+     public partial class IPPP : System.Web.UI.MasterPage
+     {
++
++
+         protected void Page_Load(object sender, EventArgs e)
+         {
+             SetHeaderText();

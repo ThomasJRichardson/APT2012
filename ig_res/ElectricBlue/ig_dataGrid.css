@@ -1,0 +1,467 @@
+.igg_ElectricBlueControl
+{
+	background-position:right top ;
+	border:solid 1px #052684;
+}
+
+
+.igg_ElectricBlueHeader
+{
+	background-color:#2CB2EB;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/header.gif);
+	height: 25px;
+	color:White;
+}
+
+
+.igg_ElectricBlueHeaderCaption
+{
+	border-width:0px;
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+.igg_ElectricBlueFooter
+{
+	background-color:White;
+	background-image:none;
+	height: 25px;
+}
+
+
+.igg_ElectricBlueFooterCaption
+{
+	font-weight:normal;
+	font-size:10px;
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+tbody.igg_ElectricBlueItem>tr>td
+{
+	background-color:White;
+	background-position:right top ;
+	background-image: url(images/itembg.jpg);
+	border-width:0px;
+	border-top:solid 1px #A6C4E0;
+	border-right:dotted 1px #A6C4E0;
+	padding:5px 8px 5px 8px;
+	height: 30px;
+	overflow: hidden;
+	vertical-align:middle;
+}
+
+
+.igg_ElectricBlueScrollbarIntersection
+{
+}
+
+
+.igg_ElectricBlueRowSelector
+{
+	border-top:solid 1px Gainsboro;
+	border-right:dotted 1px #A6C4E0;
+	width: 35px;
+	color:DeepSkyBlue;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igg_ElectricBluePager
+{
+	background-color:White;
+	border-width:0px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:right;
+}
+
+
+.igg_ElectricBluePageLink
+{
+	margin-right:10px;
+	cursor:hand;
+	color:#2F3660;
+}
+
+
+.igg_ElectricBlueFilterRuleDropDown
+{
+	background-color:White;
+	border:solid 1px #052684;
+	width: 150px;
+	overflow: auto;
+	max-height: 150px;
+	height: auto !important;
+	height: 150px;
+}
+
+
+.igg_ElectricBlueFilterButton
+{
+	background-color:Transparent;
+	border-style:solid;
+	border-width:0px;
+	height: 18px;
+}
+
+
+.igg_ElectricBlueResizeIndicator
+{
+	background-color:#2CB2EB;
+	width: 2px;
+}
+
+
+tbody>tr.igg_ElectricBlueAlt>td
+{
+	background-image:none;
+	border-top-color:Gainsboro;
+	padding:5px 8px 5px 8px;
+	vertical-align:middle;
+}
+
+
+.igg_ElectricBlueHeaderRowSelector
+{
+	background-color:Transparent;
+	background-image: none;
+	border:solid 0px #FFFFFF;
+}
+
+
+.igg_ElectricBlueFooterRowSelector
+{
+	background-color:Transparent;
+	background-image: none;
+	border:solid 0px #FFFFFF;
+}
+
+
+.igg_ElectricBlueSelectedHeader
+{
+}
+
+
+.igg_ElectricBluePageCurrent
+{
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/blank.gif);
+	margin-right:10px;
+	padding:3px 6px 5px 5px;
+}
+
+
+tr.igg_ElectricBlueAddNewRow>td
+{
+	overflow: hidden;
+}
+
+
+.igg_ElectricBlueAddNewRowSelectorImageCssClass
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/addnewrow_image.gif);
+}
+
+
+.igg_ElectricBlueAddNewRowSelectorCssClass
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_ElectricBlueFilterRow
+{
+	font-size:10px;
+	font-family: Verdana;
+	border-top:solid 0px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	height: 22px;
+	color:Black;
+}
+
+
+.igg_ElectricBlueFilterRuleDropDownItem
+{
+	font-size:11px;
+	font-family: Verdana;
+	padding:0px 3px 0px 3px;
+}
+
+
+.igg_ElectricBlueFilterRowSelectorImage
+{
+}
+
+
+.igg_ElectricBlueFilterRowSelectorCssClass
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tr.igg_ElectricBlueFilterRow>td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_ElectricBlueHeaderScrollbarIntersection
+{
+}
+
+
+.igg_ElectricBlueFooterScrollbarIntersection
+{
+}
+
+
+.igg_ElectricBlueSelectedRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+}
+
+
+.igg_ElectricBlueSelectedRowSelectorImage
+{
+}
+
+
+TR.igg_ElectricBlueAddNewRowTop>TD
+{
+}
+
+
+TR.igg_ElectricBlueAddNewRowBottom>TD
+{
+}
+
+
+.igg_ElectricBlueFilterRowTop
+{
+}
+
+
+.igg_ElectricBlueFilterRowBottom
+{
+}
+
+
+.igg_ElectricBlueFilterRuleDropDownSelectedItem
+{
+	background-color:Transparent;
+	background-image: url(images/header.gif);
+	font-size:11px;
+	font-family: Verdana;
+	padding:0px 3px 0px 3px;
+	color:White;
+}
+
+
+tr.igg_ElectricBlueFilterRowTop>td
+{
+}
+
+
+tr.igg_ElectricBlueFilterRowBottom>td
+{
+}
+
+
+tbody>tr>td.igg_ElectricBlueSelectedCell
+{
+	background-color:#182358;
+	background-image: url(images/igg_selected.gif);
+	color:White;
+}
+
+
+.igg_ElectricBlueAddNewRowScrollbarIntersection
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	height: 22px;
+}
+
+
+.igg_ElectricBlueFilterDisabled
+{
+}
+
+
+.igg_ElectricBlueFilterScrollbarIntersection
+{
+	background-color:#EEEEEE;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	height: 22px;
+}
+
+
+tbody>tr>td.igg_ElectricBlueActiveCell
+{
+}
+
+
+.igg_ElectricBlueActiveRow
+{
+}
+
+
+.igg_ElectricBlueActiveColumn
+{
+}
+
+
+.igg_ElectricBlueActiveRowSelectorImage
+{
+	color:White;
+}
+
+
+.igg_ElectricBlueActiveRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+}
+
+
+.igg_ElectricBlueFilterRuleDropDownHoverItem
+{
+	background-color:Transparent;
+	background-image: url(images/header.gif);
+	font-size:11px;
+	font-family: Verdana;
+	padding:0px 3px 0px 3px;
+	color:White;
+}
+
+
+.igg_ElectricBlueEditCell
+{
+	background-color:White;
+	border:solid 1px #AAAAAA;
+}
+
+
+.igg_ElectricBlueFilterButton>td
+{
+	border-top:solid 0px Transparent;
+	border-right:solid 0px Transparent;
+	border-bottom:solid 0px Transparent;
+	border-left:solid 0px Transparent;
+}
+
+
+.igg_ElectricBlueVirtualScrollTooltip
+{
+	background-color:#2CB2EB;
+	font-size:10px;
+	font-family: Verdana;
+	border:solid 1px #052684;
+	padding:3px;
+	color:White;
+	text-align:center;
+}
+
+
+.igg_ElectricBlueAddNewRow>td
+{
+	background-color:#F7F7F7;
+	font-size:10px;
+	font-family: Verdana;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	padding-left:7px;
+	height: 22px;
+}
+
+
+.igg_ElectricBlueAddNewRowTop>td
+{
+}
+
+
+.igg_ElectricBlueAddNewRowBottom
+{
+}
+
+
+.igg_ElectricBlueAddNewRowBottom>td
+{
+}
+
+
+.igg_ElectricBlueAddNewRowTop
+{
+}
+
+
+.igg_ElectricBlueTopDragIndicator
+{
+      background-image:url("images/igg_TopDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px;
+      height:6px;
+      margin-top: 2px;
+      z-index: 100;
+}
+
+.igg_ElectricBlueMiddleDragIndicator
+{
+      background-image:url("images/igg_MiddleDragIndicator.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      width:11px;
+}
+
+.igg_ElectricBlueBottomDragIndicator
+{
+      background-image:url("images/igg_BottomDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px;
+      height:6px;
+      position: absolute;
+      margin-top: -2px;
+      z-index: 100;
+}
