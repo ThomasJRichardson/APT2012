@@ -193,6 +193,16 @@ a.arrowlink:hover {
 	display: inline-block;
 }
 
+
+#main_content form p.fullwidth input[type="radio"]{margin-right:10px;}
+
+.RadioButtons input[type="radio"]
+{
+    margin-right:20px;
+}
+
+
+
 /*
 Header
 ========================================================

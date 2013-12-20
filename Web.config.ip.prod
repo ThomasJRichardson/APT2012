@@ -22,30 +22,30 @@
   <infragistics.web styleSetName="Default" styleSetPath="~/ig_res" />
   <appSettings>
     <clear />
-    <add key="smtpserver" value="COLUMBIA.APT2000.com" />
-    <add key="fromemail" value="website@alliedpensions.com" />
+    <add key="smtpserver" value="82.195.128.132" />
+    <add key="fromemail" value="aptonline@alliedpensions.com" />
     <add key="fromemailname" value="APT Online" />
     <add key="toemail" value="website@alliedpensions.com" />
     <add key="emailUserName" value="APT2000\byrneb" />
     <add key="emailPassword" value="APT2011" />
-    <add key="portno" value="25" />
     <add key="SiteTitle" value="APT Online" />
-
-    <add key="ServerName" value="localhost" />
+    
+    <add key="ServerName" value="AIPWSVR001" />
     <add key="DatabaseName" value="APT2012" />
-    <add key="SQLUserId" value="sa" />
-    <add key="SQLUserPassword" value="Pension1" />
-
-    <add key="ReportServerUrl" value="http://RICHARDSONT/ReportServer" />
-    <add key="ReportServerUser" value="RICHARDSONT" />
-    <add key="ReportServerPassword" value="G0lf5sfun" />
-    <add key="ReportServerDomain" value="APT2000" />
-
+    <add key="SQLUserId" value="websa" />
+    <add key="SQLUserPassword" value="z1x2c3v4b5" />
+    
+    <add key="ReportServerUrl" value="http://AIPWSVR001/ReportServer" />
+    <add key="ReportServerUser" value="admin-allied" />
+    <add key="ReportServerPassword" value="QjN2597$Te1" />
+    <add key="ReportServerDomain" value="AIPWSVR001" />
+    
     <add key="LetterSigningName" value="Kirstyn Switzer" />
     <add key="log4netFile" value="E:\APTSITES\APTLOG\APT2012.dll.log4net" />
     <add key="LogToDB" value="true" />
-
-
+        <add key="Connect Timeout" value="60000" />
+	  
+	  
     <!-- UserNameStartWith Setting for IPPP mini website-->
     <add key="UserNamePrefix" value="IP-" />
     <add key="EmailSuccess" value="Mail Sent Successfully." />
@@ -72,13 +72,13 @@
     <add key="reviewMessage2" value="You need to confirm your service record details are correct before you can submit any changes to us." />
     <add key="reviewMessage3" value="Changes to your service record will be verified with your employer." />
     <!-- Ends-->
-    
+
   </appSettings>
   <connectionStrings>
     <clear />
-    <add name="LocalSqlServer" connectionString="Data Source=localhost;Initial Catalog=APT2012;Trusted_Connection=false;User Id=sa;Password=Pension1;Integrated Security=false" />
-    <add name="APT2012Entities" connectionString="metadata=res://*/APT2012Model.csdl|res://*/APT2012Model.ssdl|res://*/APT2012Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=localhost;Initial Catalog=APT2012;Trusted_Connection=No;User Id=sa;Password=Pension1;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
-    <add name="IPPPEntities" connectionString="metadata=res://*/IPPPDataModel.csdl|res://*/IPPPDataModel.ssdl|res://*/IPPPDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=IPPP;user id=sa;password=Pension1;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="LocalSqlServer" connectionString="Data Source=AIPWSVR001;Initial Catalog=APT2012;Trusted_Connection=false;User Id=websa;Password=z1x2c3v4b5;Integrated Security=false;Connect Timeout=60000" />
+    <add name="APT2012Entities" connectionString="metadata=res://*/APT2012Model.csdl|res://*/APT2012Model.ssdl|res://*/APT2012Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=AIPWSVR001;Initial Catalog=APT2012;Trusted_Connection=No;User Id=websa;Password=z1x2c3v4b5;Connect Timeout=60000;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+    <add name="IPPPEntities" connectionString="metadata=res://*/IPPPDataModel.csdl|res://*/IPPPDataModel.ssdl|res://*/IPPPDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=AIPWSVR001;initial catalog=IPPP;User Id=websa;Password=z1x2c3v4b5;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
   </connectionStrings>
   <location path="APTTHEME">
     <system.web>
@@ -184,7 +184,7 @@
         <add name="SqlRoleManager" type="System.Web.Security.SqlRoleProvider" connectionStringName="LocalSqlServer" applicationName="/" />
       </providers>
     </roleManager>
-    <compilation debug="true" targetFramework="4.0" tempDirectory="C:\SOURCE\APT2012_TEMP17112013">
+    <compilation targetFramework="4.0" tempDirectory="C:\SOURCE\APT2012_TEMP17112013">
       <assemblies>
         <add assembly="Infragistics35.Web.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7DD5C3163F2CD0CB" />
         <add assembly="Infragistics35.WebUI.Shared.v9.1, Version=9.1.20091.1015, Culture=neutral, PublicKeyToken=7DD5C3163F2CD0CB" />

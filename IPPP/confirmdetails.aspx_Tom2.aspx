@@ -148,13 +148,11 @@
                             MaxLength="50" size="30" runat="server" /></p>
                 </div>
             </asp:Panel>
-                <asp:Label ID="lblServiceRecordUpdated" runat="server" CssClass="reply" Text="Your service record was last updated by the Administrators at 10:17 on 04/12/2013" />
-                <p class="fullwidth" /><p class="fullwidth" /><p class="fullwidth" />
+            <asp:Label ID="lblServiceRecordUpdated" runat="server" CssClass="reply" Text="Your service record was last updated by the Administrators at 10:17 on 04/12/2013" />
             <p class="fullwidth">
-                <asp:RadioButtonList ID="rblConfirm" runat="server" CssClass="RadioButtons">
+                <asp:RadioButtonList ID="rblConfirm" runat="server">
                 </asp:RadioButtonList>
             </p>
-                <p class="fullwidth" /><p class="fullwidth" /><p class="fullwidth" />
             <asp:Panel ID="pnlEdit" runat="server">
                 <div id="editablerecords_wrapper">
                     <h4>

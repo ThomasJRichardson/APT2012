@@ -600,6 +600,7 @@
     <Content Include="IPPP\js\bootbox.min.js" />
     <Content Include="IPPP\js\bootstrap.min.js" />
     <Content Include="IPPP\js\common.js" />
+    <Content Include="IPPP\js\confirmdetails.js" />
     <Content Include="IPPP\js\home-slider02.js" />
     <Content Include="IPPP\js\jquery-1.8.2.min.js" />
     <Content Include="IPPP\js\script.js" />
@@ -1024,6 +1025,12 @@
     <Content Include="IPPP\IPPP.Master" />
     <Content Include="packages.config" />
     <None Include="Lib\AjaxControlToolkit.dll.refresh" />
+    <None Include="Web.config.ip.prod">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web.config.ip.qa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

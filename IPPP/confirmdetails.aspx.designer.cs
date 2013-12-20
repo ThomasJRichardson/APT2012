@@ -337,15 +337,6 @@ namespace APT2012.IPPP {
         protected global::System.Web.UI.WebControls.Label lblServiceRecordUpdated;
         
         /// <summary>
-        /// UpdatePanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
-        /// <summary>
         /// rblConfirm control.
         /// </summary>
         /// <remarks>
