@@ -61,13 +61,15 @@ namespace APT2012
 
         private void LoadReport(string ReportName, string fromDate, string ToDate, string Funds, string selectedSchemeId, int memberid,string strReportType)
         {
-
-
             List<ReportParameter> rp = new List<ReportParameter>();
             rp.Add(new ReportParameter("SchemeID", selectedSchemeId));
             rp.Add(new ReportParameter("StartDate", fromDate));
             rp.Add(new ReportParameter("EndDate", ToDate));
-            if (Funds != "")
+            if (Funds == "")
+            {
+                rp.Add(new ReportParameter("FundIDs", ""));
+            }
+            else
             {
                 rp.Add(new ReportParameter("FundIDs", Funds));
             }
@@ -76,9 +78,12 @@ namespace APT2012
                 rp.Add(new ReportParameter("MemberID", memberid.ToString()));
             }
             //rp.Add(new ReportParameter("ReportType", ddlReportType.SelectedValue.ToString().ToUpper() ));
+            if (ReportName == "FundUnitPriceGraph_Monthly" && strReportType == "DATETODATE")
+            {
+                strReportType = "MONTHLY";
+            }
+
             rp.Add(new ReportParameter("ReportType", strReportType));
-
-
 
             //rp.Add(new ReportParameter("SchemeID", "1907534"));
             //rp.Add(new ReportParameter("StartDate", "01/01/2007"));
@@ -91,10 +96,9 @@ namespace APT2012
             ReportViewer1.ServerReport.ReportServerCredentials = new ReportCredentials(ConfigurationManager.AppSettings["ReportServerUser"], ConfigurationManager.AppSettings["ReportServerPassword"], ConfigurationManager.AppSettings["ReportServerDomain"]);
             ReportViewer1.ServerReport.SetParameters(rp);
             ReportViewer1.ShowParameterPrompts = false;
+            //ReportViewer1.ShowParameterPrompts = (ReportName == "FundUnitPriceGraph_Monthly");
 
             ReportViewer1.ServerReport.Refresh();
-
-
         }
 
         protected void btnReport_Click(object sender, EventArgs e)

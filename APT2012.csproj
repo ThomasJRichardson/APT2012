@@ -547,6 +547,7 @@
     <Content Include="APTTHEME\APT01\jquery-ui.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="APTTHEME\APT01\ui.dropdownchecklist.standalone.css" />
     <Content Include="ChartImages\Chart_0.png" />
     <Content Include="ChartImages\Chart_1.png" />
     <Content Include="ChartImages\Chart_10.png" />
@@ -617,6 +618,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="account-suspended.aspx" />
+    <Content Include="js\jquery\jengine.js" />
+    <Content Include="js\jquery\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery\jquery.js" />
+    <Content Include="js\jquery\ui\jquery-ui-1.8.11.custom.min.js" />
+    <Content Include="js\jquery\ui\jquery-ui-1.8.custom.min.js" />
+    <Content Include="js\ui.dropdownchecklist-1.4-min.js" />
     <Content Include="Lib\AjaxControlToolkit.dll" />
     <Content Include="Lib\Common.Logging.dll" />
     <Content Include="Lib\CuteWebUI.AjaxUploader.dll" />
@@ -635,8 +642,13 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ws\Performance.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ws\Performance.asmx.cs">
+      <DependentUpon>Performance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Content Include="App_Code\SqlStoredProcedureProfileProvider.cs" />
     <Content Include="App_Code\SqlTableProfileProvider.cs" />
     <Compile Include="APTAjax.aspx.cs">
@@ -1027,9 +1039,11 @@
     <None Include="Lib\AjaxControlToolkit.dll.refresh" />
     <None Include="Web.config.ip.prod">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web.config.ip.qa">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -1082,9 +1096,15 @@
     <Content Include="App_LocalResources\Site.Master.ru.resx" />
     <Content Include="App_LocalResources\UserProfile.aspx.ru.resx" />
     <Content Include="Reporting\App_LocalResources\Reporting.aspx.resx" />
-    <Content Include="Reporting\App_LocalResources\LeavingServiceOptions.aspx.resx" />
-    <Content Include="Reporting\App_LocalResources\ContributionSchedule.aspx.resx" />
-    <Content Include="Reporting\App_LocalResources\ARFInvestmentStatement.aspx.resx" />
+    <Content Include="Reporting\App_LocalResources\LeavingServiceOptions.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporting\App_LocalResources\ContributionSchedule.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporting\App_LocalResources\ARFInvestmentStatement.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Reporting\App_LocalResources\ARFInvestmentStatement.aspx.ru.resx" />
     <Content Include="Reporting\App_LocalResources\ContributionSchedule.aspx.ru.resx" />
     <Content Include="Reporting\App_LocalResources\LeavingServiceOptions.aspx.ru.resx" />

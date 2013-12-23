@@ -4,7 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
+using System.Configuration;
+using System.Web.Profile;
+using APT.Model;
+using System.Web.Security;
 using APT.UTIL;
+using System.Diagnostics;
 
 namespace APT2012.IPPP
 {
@@ -20,16 +26,22 @@ namespace APT2012.IPPP
             {
                 string name = txtName.Text;
                 string email = txtEmail.Text;
-                string message = txtMessage.Text;
+                string msg = txtMessage.Text;
                 string body = Utility.GetEmailTemplate("/IPPP/Template/contactus.htm");
-                body = string.Format(body, User.Identity.Name, name, email, message, Utility.GetAppSettingValue("IPPP_Options_Email_A"), Utility.GetAppSettingValue("IPPP_Options_Email_B"), Utility.GetAppSettingValue("IPPP_Options_Email_C"), Utility.GetAppSettingValue("IPPP_Options_Email_D"));
+                body = string.Format(body, User.Identity.Name, name, email, msg);
 
-                Email objEmail = new Email();
-                objEmail.EmailBody = body;
-                objEmail.EmailSubject = Utility.GetAppSettingValue("IPPP_Contact_Subject");
-                objEmail.EmailTo = Utility.GetAppSettingValue("IPPP_Contact_Email");
-                objEmail.SendEmail();
-                hdnMsg.Value = Utility.GetAppSettingValue("EmailSuccess");
+                MailMessage message = new MailMessage();
+                message.To.Add(ConfigurationManager.AppSettings["toemail"]);
+                message.Subject = "Enquiry from APT (IP) Online - " + DateTime.Now.ToShortDateString();
+                message.Body = body;
+                message.IsBodyHtml = true;
+                message.From = new MailAddress( ConfigurationManager.AppSettings["fromemail"], 
+                                                ConfigurationManager.AppSettings["fromemailname"]);
+
+                SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["smtpserver"]);
+                client.Send(message);
+
+		        hdnMsg.Value = Utility.GetAppSettingValue("EmailSuccess");
             }
             catch (Exception ex)
             {

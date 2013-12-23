@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Performance.aspx.cs" Inherits="APT2012.Performance" MaintainScrollPositionOnPostback="true" MasterPageFile="~/Site.Master" %>
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 <asp:Content ID="ContentHead" ContentPlaceHolderID="ContentPlaceHolderHead" runat="server">
-    <link href="APTTHEME/APT01/ui.dropdownchecklist.standalone.css" rel="stylesheet" type="text/css" />    
+    <link href="~/APTTHEME/APT01/ui.dropdownchecklist.standalone.css" rel="stylesheet" type="text/css" />    
     <link rel="stylesheet" type="text/css" media="screen,print" href="~/APTTHEME/APT01/APTStyleContent.css" />    
     <link rel="stylesheet" type="text/css" media="print" href="~/APTTHEME/APT01/APTStylePrint.css" />
     <link href="APTTHEME/APT01/jquery-ui.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
         $(document).ready(function () {
 
             $("#<%=btnReport.ClientID%>").click(function (e) {
-                
+
                 //e.preventDefault();
                 //Validate From Date
                 var txtFromDate = $('#<%=txtFromDate.ClientID%>').val();
@@ -87,18 +87,20 @@
 
                 //get the Funds
                 var lstFunds = "";
+                $("#<%=pHidFunds.ClientID%>").visible == false;
                 $("#selFundsDiv option:selected").each(function () {
                     if (lstFunds != "")
                         lstFunds += ",";
                     lstFunds += $(this).val();
-                });                
+                });
                 if (lstFunds != "") {
                     $("#<%=pHidFunds.ClientID%>").val(lstFunds);
+                    //$("#<%=pHidFunds.ClientID%>").val("");
                 }
                 else {
-
-                    alert("Please select atleast one fund for the report.")
-                    return false;
+                    $("#<%=pHidFunds.ClientID%>").val("");
+                    //alert("Please select at least one fund for the report.")
+                    //return false;
                 }
 
                 //return true;
@@ -182,7 +184,8 @@
 
                     },
                     error: function (request, status, error) {
-                        alert('error');
+                        alert('request: ' + request.toString() + '; status: ' + status.toString() + '; error: ' + error.toString());
+                        alert("url: " + flm.toString());
                     }
                 });
 
