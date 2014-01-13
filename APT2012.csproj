@@ -548,20 +548,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="APTTHEME\APT01\ui.dropdownchecklist.standalone.css" />
-    <Content Include="ChartImages\Chart_0.png" />
-    <Content Include="ChartImages\Chart_1.png" />
-    <Content Include="ChartImages\Chart_10.png" />
-    <Content Include="ChartImages\Chart_11.png" />
-    <Content Include="ChartImages\Chart_12.png" />
-    <Content Include="ChartImages\Chart_13.png" />
-    <Content Include="ChartImages\Chart_2.png" />
-    <Content Include="ChartImages\Chart_3.png" />
-    <Content Include="ChartImages\Chart_4.png" />
-    <Content Include="ChartImages\Chart_5.png" />
-    <Content Include="ChartImages\Chart_6.png" />
-    <Content Include="ChartImages\Chart_7.png" />
-    <Content Include="ChartImages\Chart_8.png" />
-    <Content Include="ChartImages\Chart_9.png" />
+    <Content Include="ChartImages\IamText.txt" />
     <Content Include="controls\TrusteeReportNav2.ascx" />
     <Content Include="Graphics\American Airlines.gif" />
     <Content Include="Graphics\Arup.gif" />
@@ -571,7 +558,6 @@
     <Content Include="Graphics\EMC.gif" />
     <Content Include="Graphics\Gaelectric.gif" />
     <Content Include="Graphics\genericITAllianceImage.jpg" />
-    <Content Include="ChartImages\IamText.txt" />
     <Content Include="Default.aspx" />
     <Content Include="Graphics\ICS.gif" />
     <Content Include="Graphics\NextiraOne.gif" />
@@ -633,6 +619,7 @@
     <Content Include="lost-details.aspx" />
     <Content Include="MemberOverview.aspx" />
     <Content Include="Performance.aspx" />
+    <Content Include="PRBSchedule.aspx" />
     <Content Include="Reporting\BenefitStatement.aspx" />
     <Content Include="RequestComplete.aspx" />
     <Content Include="RiskProfileCalculator.aspx" />
@@ -645,6 +632,13 @@
     <Content Include="ws\Performance.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PRBSchedule.aspx.cs">
+      <DependentUpon>PRBSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRBSchedule.aspx.designer.cs">
+      <DependentUpon>PRBSchedule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ws\Performance.asmx.cs">
       <DependentUpon>Performance.asmx</DependentUpon>
       <SubType>Component</SubType>

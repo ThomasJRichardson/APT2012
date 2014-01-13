@@ -259,6 +259,24 @@ namespace APT2012
                                 }
                             }
                         }
+                        if (node.Url.Contains("PRBSchedule"))
+                        {
+                            if (HttpContext.Current.Session["SelectedSchemeId"] != null)
+                            {
+                                int SchemeId = (int)HttpContext.Current.Session["SelectedSchemeId"];
+                                string currency = Employer.GetCurrency((int)HttpContext.Current.Session["SelectedEmployeeId"]);
+
+                                if (Report.IsVisibleForScheme(Convert.ToInt32(node["ReportId"]), SchemeId, currency))
+                                {
+                                    e.Item.Visible = true;
+                                    return;
+                                }
+                                else
+                                {
+                                    e.Item.Visible = false;
+                                }
+                            }
+                        }
 
 
                     }
