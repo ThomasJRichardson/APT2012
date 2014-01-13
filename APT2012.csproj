@@ -621,6 +621,8 @@
     <Content Include="Performance.aspx" />
     <Content Include="PRBSchedule.aspx" />
     <Content Include="Reporting\BenefitStatement.aspx" />
+    <Content Include="Reporting\PRBBenefitStatement.aspx" />
+    <Content Include="Reporting\PRBRetirementOptions.aspx" />
     <Content Include="RequestComplete.aspx" />
     <Content Include="RiskProfileCalculator.aspx" />
     <Content Include="RiskProfileCalculatorResults.aspx" />
@@ -638,6 +640,20 @@
     </Compile>
     <Compile Include="PRBSchedule.aspx.designer.cs">
       <DependentUpon>PRBSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PRBBenefitStatement.aspx.cs">
+      <DependentUpon>PRBBenefitStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PRBBenefitStatement.aspx.designer.cs">
+      <DependentUpon>PRBBenefitStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\PRBRetirementOptions.aspx.cs">
+      <DependentUpon>PRBRetirementOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\PRBRetirementOptions.aspx.designer.cs">
+      <DependentUpon>PRBRetirementOptions.aspx</DependentUpon>
     </Compile>
     <Compile Include="ws\Performance.asmx.cs">
       <DependentUpon>Performance.asmx</DependentUpon>

@@ -195,4 +195,10 @@
   <data name="PRBSchedule" xml:space="preserve">
     <value>PRB Schedule</value>
   </data>
+  <data name="PRBBenefitStatement" xml:space="preserve">
+    <value>PRB Member Benefits Statement</value>
+  </data>
+  <data name="PRBRetirementOptions" xml:space="preserve">
+    <value>PRB Retirement Options</value>
+  </data>
 </root>

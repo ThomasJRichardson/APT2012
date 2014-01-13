@@ -22,11 +22,11 @@ namespace APT2012
             {
                 //if (Session["LoginUserName"].ToString().ToUpper() == "APTDEMOADMIN")
                 //{
-                tblReports.Visible = true;
-                tblUnderConstruction.Visible = false;
+                //tblReports.Visible = true;
+                //tblUnderConstruction.Visible = false;
 
-                if (HttpContext.Current.Session["SelectedMemberId"] != null)
-                    pHidMemberID.Value = HttpContext.Current.Session["SelectedMemberId"].ToString();
+                //if (HttpContext.Current.Session["SelectedMemberId"] != null)
+                //    pHidMemberID.Value = HttpContext.Current.Session["SelectedMemberId"].ToString();
 
                 //DateTime dt = DateTime.Now;
                 //DateTime fromDT = new DateTime(dt.Year-1,1,1);
@@ -46,10 +46,10 @@ namespace APT2012
                 //    tblUnderConstruction.Visible = true;  
                 //}
             }
-            else
-            {
-                txtPageLoad.Text = "0";
-            }
+            //else
+            //{
+            //    txtPageLoad.Text = "0";
+            //}
         }
         DateTime LastDayOfQuarter(DateTime today)
         {
