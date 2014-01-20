@@ -91,6 +91,10 @@
                     </asp:DropDownList>
                 </p>
                 <p>
+                    Final Salary
+                    <asp:TextBox Text="" Enabled="false" name="FSal" ID="txtFSal" MaxLength="50" size="30"
+                        runat="server" /></p>
+                <p>
                     Pensionable Salary
                     <asp:TextBox Text="" Enabled="false" name="PSal" ID="txtPSal" MaxLength="50" size="30"
                         runat="server" /></p>
@@ -133,6 +137,10 @@
                         <asp:DropDownList ID="ddlSchemeCategory1" Enabled="false" runat="server">
                         </asp:DropDownList>
                     </p>
+                    <p>
+                        Final Salary
+                        <asp:TextBox Text="" Enabled="false" name="FinalSalary" ID="txtFSal1" MaxLength="50"
+                            size="30" runat="server" /></p>
                     <p>
                         Pensionable Salary
                         <asp:TextBox Text="" Enabled="false" name="PensionableSalary" ID="txtPSal1" MaxLength="50"
@@ -190,6 +198,9 @@
                             </asp:DropDownList>
                         </p>
                         <p>
+                            Final Salary
+                            <asp:TextBox Text="" ID="txtEFSal" MaxLength="50" size="30" runat="server" /></p>
+                        <p>
                             Pensionable Salary
                             <asp:TextBox Text="" ID="txtEPSal" MaxLength="50" size="30" runat="server" /></p>
                         <p>
@@ -232,6 +243,11 @@
                                 Scheme category
                                 <asp:DropDownList ID="ddlESchemeCategory1" runat="server">
                                 </asp:DropDownList>
+                            </p>
+                            <p>
+                                Final Salary
+                                <asp:TextBox Text="" name="FinalSalary" ID="txtEFSal1" MaxLength="50" size="30"
+                                    runat="server" />
                             </p>
                             <p>
                                 Pensionable Salary

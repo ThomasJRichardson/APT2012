@@ -146,6 +146,8 @@ namespace APT2012.RY
                 {
                     ddlSchemecategory.SelectedIndex = ddlSchemecategory.Items.IndexOf(ddlSchemecategory.Items.FindByValue(ipWebData.SchemeCategory_1));
                 }
+                if (ipWebData.FinalSalary_1 != null)
+                    txtFSal.Text = ipWebData.FinalSalary_1.ToString();
                 if (ipWebData.PensionableSalary_1 != null)
                     txtPSal.Text = ipWebData.PensionableSalary_1.ToString();
                 if (ddlEmployment.Items.FindByValue(ipWebData.TransferIn_1) != null)
@@ -168,6 +170,7 @@ namespace APT2012.RY
                     {
                         ddlSchemeCategory1.SelectedIndex = ddlSchemeCategory1.Items.IndexOf(ddlSchemeCategory1.Items.FindByValue(ipWebData.SchemeCategory_2));
                     }
+                    txtFSal1.Text = ipWebData.FinalSalary_2.ToString();
                     txtPSal1.Text = ipWebData.PensionableSalary_2.ToString();
                     if (ddlEEmployment1.Items.FindByValue(ipWebData.TransferIn_2) != null)
                         ddlEmployment1.SelectedIndex = ddlEmployment1.Items.IndexOf(ddlEmployment1.Items.FindByValue(ipWebData.TransferIn_2));
@@ -189,6 +192,8 @@ namespace APT2012.RY
                 if (ddlESchemeCategory.Items.FindByValue(ipWebData.SchemeCategory_m1) != null)
                     ddlESchemeCategory.SelectedIndex = ddlESchemeCategory.Items.IndexOf(ddlESchemeCategory.Items.FindByValue(ipWebData.SchemeCategory_m1));
 
+                if (ipWebData.FinalSalary_m1 != null)
+                    txtEFSal.Text = ipWebData.FinalSalary_m1.ToString();
                 if (ipWebData.PensionableSalary_m1 != null)
                     txtEPSal.Text = ipWebData.PensionableSalary_m1.ToString();
                 if (ddlEEmployment.Items.FindByValue(ipWebData.TransferIn_m1) != null)
@@ -206,6 +211,8 @@ namespace APT2012.RY
                     txtEDJScheme1.Text = ipWebData.DateJoinedScheme_m2.Value.ToString(@"dd/MM/yyyy");
                 if (ddlEEmployment1.Items.FindByValue(ipWebData.TransferIn_m2) != null)
                     ddlEEmployment1.SelectedIndex = ddlEEmployment1.Items.IndexOf(ddlEEmployment1.Items.FindByValue(ipWebData.TransferIn_m2));
+                if (ipWebData.FinalSalary_m2 != null)
+                    txtEFSal1.Text = ipWebData.FinalSalary_m2.ToString();
                 if (ipWebData.PensionableSalary_m2 != null)
                     txtEPSal1.Text = ipWebData.PensionableSalary_m2.ToString();
                 if (ddlESchemeCategory1.Items.FindByValue(ipWebData.SchemeCategory_m2) != null)
@@ -314,9 +321,8 @@ namespace APT2012.RY
         private List<ListItem> GetSchemeCatgoryList()
         {
             List<ListItem> list = new List<ListItem>();
-            list.Add(new ListItem("Former Guinness & Mahon", "Former Guinness & Mahon"));
-            list.Add(new ListItem("Non Contributory", "Non Contributory"));
-            list.Add(new ListItem("Contributory", "Contributory"));
+            list.Add(new ListItem("Pilots", "Pilots DB"));
+            list.Add(new ListItem("Staff", "Staff DB"));
             return list;
         }
 
@@ -406,6 +412,10 @@ namespace APT2012.RY
 
                         ipWebData.SchemeCategory_m1 = ddlESchemeCategory.SelectedValue;
 
+                        if (!string.IsNullOrEmpty(txtEFSal.Text))
+                        {
+                            ipWebData.FinalSalary_m1 = Convert.ToDecimal(txtEFSal.Text);
+                        }
                         if (!string.IsNullOrEmpty(txtEPSal.Text))
                         {
                             ipWebData.PensionableSalary_m1 = Convert.ToDecimal(txtEPSal.Text);
@@ -436,6 +446,11 @@ namespace APT2012.RY
 
                     ipWebData.SchemeCategory_m2 = ddlESchemeCategory1.SelectedValue;
 
+                    ipWebData.FinalSalary_m2 = null;
+                    if (!string.IsNullOrEmpty(txtEFSal1.Text))
+                    {
+                        ipWebData.FinalSalary_m2 = Convert.ToDecimal(txtEFSal1.Text);
+                    }
                     ipWebData.PensionableSalary_m2 = null;
                     if (!string.IsNullOrEmpty(txtEPSal1.Text))
                     {

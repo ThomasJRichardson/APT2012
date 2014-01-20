@@ -211,6 +211,15 @@ namespace APT2012.RY {
         protected global::System.Web.UI.WebControls.DropDownList ddlSchemecategory;
         
         /// <summary>
+        /// txtFSal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFSal;
+        
+        /// <summary>
         /// txtPSal control.
         /// </summary>
         /// <remarks>
@@ -299,6 +308,15 @@ namespace APT2012.RY {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSchemeCategory1;
+        
+        /// <summary>
+        /// txtFSal1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFSal1;
         
         /// <summary>
         /// txtPSal1 control.
@@ -427,6 +445,15 @@ namespace APT2012.RY {
         protected global::System.Web.UI.WebControls.DropDownList ddlESchemeCategory;
         
         /// <summary>
+        /// txtEFSal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEFSal;
+        
+        /// <summary>
         /// txtEPSal control.
         /// </summary>
         /// <remarks>
@@ -533,6 +560,15 @@ namespace APT2012.RY {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlESchemeCategory1;
+        
+        /// <summary>
+        /// txtEFSal1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEFSal1;
         
         /// <summary>
         /// txtEPSal1 control.
