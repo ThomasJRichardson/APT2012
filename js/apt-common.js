@@ -8,6 +8,7 @@ function showDisclaimer() {
         modal: true,
         bgiframe: true,
         width: 600,
+        height: 325,
         closeOnEscape: false,
         open: function (event, ui) {
             $(".ui-dialog-titlebar-close").hide();

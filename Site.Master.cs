@@ -176,13 +176,35 @@ namespace APT2012
             if (node != null)
             {
                 blnARF = false;
-                strNodeName = node.Title.Trim().ToUpper();  
+                strNodeName = node.Title.Trim().ToUpper();
+
                 if (!string.IsNullOrEmpty(node["visible"]))
                 {
                     e.Item.Visible = false;
                     //Menu1.Items.Remove(e.Item);
                 }
+
                 int selectedMemberId = 0;
+
+                if (node.Url.Contains("PRBSchedule") || node.Url.Contains("/Reporting/PRB"))
+                {
+                    if (HttpContext.Current.Session["SelectedSchemeId"] != null)
+                    {
+                        int SchemeId = (int)HttpContext.Current.Session["SelectedSchemeId"];
+                        string currency = Employer.GetCurrency((int)HttpContext.Current.Session["SelectedEmployeeId"]);
+
+                        if (Report.IsVisibleForScheme(Convert.ToInt32(node["ReportId"]), SchemeId, currency))
+                        {
+                            e.Item.Visible = true;
+                            return;
+                        }
+                        else
+                        {
+                            e.Item.Visible = false;
+                        }
+                    }
+                }
+                //if (node.Url.Contains("PRBSchedule") || node.Url.Contains("/Reporting/PRB"))
 
                 if (node.Url.Contains("/Contributions.aspx") || node.Url.Contains("/InvestmentStrategy.aspx"))
                 {
@@ -200,12 +222,15 @@ namespace APT2012
                         }
                     }
                 }
-                if (node.Url.Contains("/Reporting/"))
+                //if (node.Url.Contains("/Contributions.aspx") || node.Url.Contains("/InvestmentStrategy.aspx"))
+
+                if (node.Url.Contains("/Reporting/") && !(node.Url.Contains("PRBSchedule") || node.Url.Contains("/Reporting/PRB")))
                 {
                     if (HttpContext.Current.Session["SelectedMemberId"] != null)
                     {
                         selectedMemberId = (int)HttpContext.Current.Session["SelectedMemberId"];
                         Benefit benefit = Benefit.GetDetails(selectedMemberId);
+
                         if (!node.Url.Contains("/Reporting/Reporting.aspx"))
                         {
                             if (benefit != null)
@@ -237,6 +262,8 @@ namespace APT2012
 
                             }
                         }
+                        //if (!node.Url.Contains("/Reporting/Reporting.aspx"))
+
                         if (node.Url.Contains("BenefitStatement"))
                         {
                             if (!string.IsNullOrEmpty(node["ReportId"]))
@@ -259,28 +286,13 @@ namespace APT2012
                                 }
                             }
                         }
-                        if (node.Url.Contains("PRBSchedule"))
-                        {
-                            if (HttpContext.Current.Session["SelectedSchemeId"] != null)
-                            {
-                                int SchemeId = (int)HttpContext.Current.Session["SelectedSchemeId"];
-                                string currency = Employer.GetCurrency((int)HttpContext.Current.Session["SelectedEmployeeId"]);
-
-                                if (Report.IsVisibleForScheme(Convert.ToInt32(node["ReportId"]), SchemeId, currency))
-                                {
-                                    e.Item.Visible = true;
-                                    return;
-                                }
-                                else
-                                {
-                                    e.Item.Visible = false;
-                                }
-                            }
-                        }
-
+                        //if (node.Url.Contains("BenefitStatement"))
 
                     }
+                    //if (HttpContext.Current.Session["SelectedMemberId"] != null)
+
                 }
+                //if (node.Url.Contains("/Reporting/") && !(node.Url.Contains("PRBSchedule") || node.Url.Contains("/Reporting/PRB")))
 
                 if ((!string.IsNullOrEmpty(node["ReportId"])) && (strNodeName.ToUpper() != "LEAVING SERVICE OPTIONS") && (!blnARF))
                 {
@@ -300,6 +312,8 @@ namespace APT2012
                         }
                     }
                 }
+                //if ((!string.IsNullOrEmpty(node["ReportId"])) && (strNodeName.ToUpper() != "LEAVING SERVICE OPTIONS") && (!blnARF))
+
                 //PRB LEAVING SERVICE OPTIONS
                 if (strNodeName.ToUpper() == "LEAVING SERVICE OPTIONS")
                 {
@@ -330,6 +344,8 @@ namespace APT2012
                             e.Item.Visible = true;
                     }
                 }
+
+
             }
         }
 

@@ -70,24 +70,31 @@ namespace APT2012
 
                 string username = Session["LoginUserName"].ToString();
 
-                var usernameprefix = Utility.GetAppSettingValue("UserNamePrefix");
-                if (username.ToUpper().StartsWith(usernameprefix.ToUpper()))
+                var ip_usernameprefix = Utility.GetAppSettingValue("IPPP_UserNamePrefix");
+                if (username.ToUpper().StartsWith(ip_usernameprefix.ToUpper()))
                 {
                     Response.Redirect("~/IPPP/Index.aspx", false);
                 }
                 else
                 {
-                    string[] roles = Roles.GetRolesForUser(username);
-
-                    if (roles.Contains("Scheme Admin") || roles.Contains("HR Admin") || roles.Contains("APT Admin"))
+                    var ry_usernameprefix = Utility.GetAppSettingValue("RY_UserNamePrefix");
+                    if (username.ToUpper().StartsWith(ry_usernameprefix.ToUpper()))
                     {
-                        Response.Redirect("~/SchemeOverview.aspx", false);
+                        Response.Redirect("~/RY/Index.aspx", false);
                     }
                     else
                     {
-                        Response.Redirect("~/MemberOverview.aspx", false);
-                    }
+                        string[] roles = Roles.GetRolesForUser(username);
 
+                        if (roles.Contains("Scheme Admin") || roles.Contains("HR Admin") || roles.Contains("APT Admin"))
+                        {
+                            Response.Redirect("~/SchemeOverview.aspx", false);
+                        }
+                        else
+                        {
+                            Response.Redirect("~/MemberOverview.aspx", false);
+                        }
+                    }
                 }
             }
             catch (Exception ex)

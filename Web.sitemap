@@ -44,7 +44,7 @@
       <siteMapNode url="~/Reporting/BenefitStatement.aspx" ReportId="1" title="Benefit Statement"  description="Benefit Statement" roles="Member,Scheme Admin,APT Admin,HR Admin" />
       <siteMapNode url="~/Reporting/PRBBenefitStatement.aspx" ReportId="10" title="Benefit Statement"  description="Benefit Statement" roles="Member,Scheme Admin,APT Admin,HR Admin" />
       <siteMapNode url="~/Reporting/PRBRetirementOptions.aspx" ReportId="11" title="Retirement Options"  description="Retirement Options" roles="Member,Scheme Admin,APT Admin,HR Admin" />
-      <siteMapNode url="~/PRBSchedule.aspx" ReportId="12" title="$resources:GlobalLocalizations,PRBSchedule,PRB Schedule" description="Schedule of Invested Contribution" roles="Member,Scheme Admin,APT Admin,HR Admin" />
+      <!--<siteMapNode url="~/PRBSchedule.aspx" ReportId="12" title="$resources:GlobalLocalizations,PRBSchedule,PRB Schedule" description="Schedule of Invested Contribution" roles="Member,Scheme Admin,APT Admin,HR Admin" />-->
     </siteMapNode>
     <siteMapNode url="~/ContactUs.aspx#" title="$resources:GlobalLocalizations,ContactUs,Contact Us"  description="" roles="Member,Scheme Admin,APT Admin,HR Admin">
       <siteMapNode url="~/ContactUs.aspx" title="$resources:GlobalLocalizations,ContactUs,Contact Us"  description=""  roles="Member,Scheme Admin,APT Admin,HR Admin"/>

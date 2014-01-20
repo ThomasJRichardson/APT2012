@@ -23,18 +23,18 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderPageTitle" runat="server">
-    <div id="Div1" style="display: none">
-        <div id="DisclaimerDialog">
-            The following questionaire may help you in assessing the level of risk you are comfortable
+    <div id="Div1" style="display: none;">
+        <div id="DisclaimerDialog" style="background-color:#b0c4de; border-style:solid; border-width:medium; border-color:blue;">
+            The following questionnaire may help you in assessing the level of risk you are comfortable
             with. There are no right or wrong answers and the questions do not take into account
             your specific circumstances, objectives or needs. The contents or results of the
-            questionaire should not be relied upon, either directly or indirectly, as a basis
+            questionnaire should not be relied upon, either directly or indirectly, as a basis
             up which to make investment or financial decisions or arrangements. APT Financial
             Services Limited does nto accept any liability, either direct or indirect, arising
             from any such profile, or any other investment issue.
-            <br /> 
-            Fiancial planners have found that this simple questionaire can be a useful guide
-            to where people may prefer to invest. Naturally this indicator is not a subsitute
+            <p/> 
+            Financial planners have found that this simple questionnaire can be a useful guide
+            to where people may prefer to invest. Naturally this indicator is not a substitute
             for considered financial planning. APT Financial Sevices Limited encourages you
             to discuss your requirements with your adviser.
             <br />
