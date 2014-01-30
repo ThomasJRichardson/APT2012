@@ -7,43 +7,31 @@
     <h2>
         What’s happening?</h2>
     <p>
-        The Trustees resolved to wind up the plan (effective from {WU-date}), following
-        notification from the Principal Employer of its decision to cease sponsorship of
-        the plan.
+        The Trustee resolved to wind up the Plan (effective from 30 December 2013), following notification from the Principal Employer of its decision to cease sponsorship of the Plan. 
     </p>
     <p>
-        In reaching this decision, the Trustees took independent legal and professional
-        advice on the matter, taking into account the need to act in the best interests
-        of all the beneficiaries of the plan.
+        In reaching this decision, the Trustee took independent legal and professional advice on the matter, taking into account the need to act in the best interests of all the beneficiaries of the Plan. 
     </p>
     <p>
-        The assets of the plan (circa {?}) on {WU-date} were insufficient to meet the
-        liabilities of the plan (circa {?}) under the Minimum Funding Standard (MFS).
-        <span style="color: #000;">[Please refer to "What can the Plan afford to pay?" in the
-            <a href="faqs.html">FAQ's</a> section]</span></p>
+        The Plan had an estimated deficit of €9.7m at the end of December 2013. Following negotiations with the Trustee the company has agreed to fully fund this deficit of €9.7m and pay an additional €2.8m into the Plan to enable the existing active and deferred members to receive enhanced transfer values.
     <p>
-        As there are insufficient assets to meet all of the obligations, the terms of the
-        Pensions Act as amended, specify the priority order in which the assets of the scheme
-        are disbursed.
+        As there are sufficient assets to meet all of the obligations under the terms of the Pensions Act as amended, the priority order in which the assets of the Plan are disbursed is as follows:
     </p>
     <p>
-        Under the Act, the pensions in the course of payment (excluding any entitlement
-        to pension increases) will rank as a priority with the interests of active and deferred
-        members (excluding any pension increase entitlements) ranking equally thereafter.
-        Given the current funding level of the scheme it is quite likely that the accrued
-        benefits of active and deferred members (excluding any entitlement to increases
-        to pensions once in payment) will not be fully covered under the MFS.
+    1)	The pensions in the course of payment will rank as a priority,
     </p>
     <p>
-        The Trustees will secure the pensions in payment (exclusive of annual increases)
-        through annuity purchase.
+    2)	The interests of active and deferred members ranking equally thereafter.
     </p>
     <p>
-        If you are an active or deferred member at {WU-date}, your entitlement will be
-        calculated by the scheme actuary based on your pensionable service completed up
-        to {WU-date}, or earlier date of leaving, and adjusted to reflect the solvency
-        level of the plan, (based on the remaining once the pension liabilities have been
-        secured by annuities.</p>
+        As a result of the funding level of the Plan; after the payment of the deficit of €9.2m and the additional contribution of €2.8m, it is quite likely that the transfer values for active and deferred members will be approximately 110% of that required  under the Pensions Board Minimum Funding Standard (MFS). 
+    </p>
+    <p>
+        The Trustee will secure the pensions in payment through annuity purchase. 
+    </p>
+    <p>
+        If you are an active or deferred member at 30 December 2013, your entitlement will be calculated by the plan actuary based on your pensionable service completed up to 30 December 2013, or earlier date of leaving, and adjusted upwards to reflect the solvency level of the Plan following the payment of the additional contributions.
+    </p>
     <p>
         For further information please contact
     </p>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace APT2012.IPPP {
+namespace APT2012.RY {
     
     
     public partial class faq {

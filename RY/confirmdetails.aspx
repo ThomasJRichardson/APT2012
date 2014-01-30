@@ -91,11 +91,11 @@
                     </asp:DropDownList>
                 </p>
                 <p>
-                    Final Salary
+                    Salary
                     <asp:TextBox Text="" Enabled="false" name="FSal" ID="txtFSal" MaxLength="50" size="30"
                         runat="server" /></p>
                 <p>
-                    Pensionable Salary
+                    Final Pensionable Salary
                     <asp:TextBox Text="" Enabled="false" name="PSal" ID="txtPSal" MaxLength="50" size="30"
                         runat="server" /></p>
                 <p>

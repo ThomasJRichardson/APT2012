@@ -164,44 +164,85 @@ div#main
 }
 
 /* Left Navigation */
+#submenu_wrapper
+{
+    margin:0px;
+    float:left;
+    width:100%;
+}
+
 
 .nav
 {
+    margin-left:18px;
+    float:left;
+    /* float: left;
+    
+        Replaced By Robert N 
+    width: 180px; 
     margin: 75px -1px 0 0;
     padding: 2px 0 0 5px;
-    float: left;
-    width: 180px;
+
+*/
+    width:100%;
+    
+    padding: 0px;
+    max-width:950px;
 }
 
 .nav ul
 {
-    display:block;
+/*    display:block;
+    position: relative; */
+    
+    display:table; 
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
+    float:left;
+    height:40px;
+    width:100%;
+
+    
 }
 
 .nav ul li
 {
-    width: 100%;
+    /*width: 100%;*/
+    display:table-cell;
+    margin:0px;
+    padding:0px;
+    line-height:30px;
+    background-color:White;
+    border-right:2px solid #ccc;
+    text-align:center;
+    
+
 }
+
+
+.nav ul li:last-child
+{
+    border:none;
+}
+
 
 .nav ul li a
 {
     display: block;
-    padding: 5px 5px 5px 15px;
-    color: #333;
-    text-decoration: underline;
+    padding: 5px 5px 5px 5px;
+    color: #0071b3;
+    text-decoration: none;
+    
 }
 
 .nav ul li a.active
 {
     font-weight: bold;
-    border: 1px Solid #ccc;
-    border-right: 1px Solid white;
-    color: #0071B3;
-    background-color: White;
+/*    border: 1px Solid #ccc; */
+    
+    color: white;
+    background-color: #0071b3;
     text-decoration: none;
 }
 
@@ -211,9 +252,11 @@ div#main
 {
     background-color: White;
     float: left;
-    margin: 0 10px 0 0;
+    margin: 0 auto;
+  /*  margin: 0 10px 0 0; */
     border: Solid 1px #ccc;
-    width: 75%;
+    /* width: 75%; */
+    width:100%;
 }
 
 .contentheader
@@ -221,6 +264,8 @@ div#main
     background: url(images/apt-gradient-06.jpg) repeat-x bottom white;
     border-bottom: 1px Solid #ccc;
     padding: 10px 5px 10px 20px;
+    
+    min-width: 950px;
 }
 
 .contentheader h2
@@ -243,6 +288,7 @@ div#main
 .contentbody
 {
     padding: 20px 20px 20px 20px;
+    min-width: 950px;
 }
 
 .title1
@@ -615,7 +661,6 @@ h5
 
 
 
-
 .fullbox, .leftbox, .rightbox
 {
     background-color: white;
@@ -631,6 +676,7 @@ h5
     padding: 3px;
     border-bottom: 1px Solid #ccc;
     margin: 0 0 3px 0;
+    
 }
 
 .heading3

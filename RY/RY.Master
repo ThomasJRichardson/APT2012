@@ -2,10 +2,9 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%-- <!DOCTYPE html>--%>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Irish Permanent Pension Scheme</title>
+    <title>Ryanair Pension Scheme</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">

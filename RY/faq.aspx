@@ -4,112 +4,64 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentbody" runat="server">
-    <h2 style="text-align: center;">
-        <strong>Wind Up of the Ryanair Pension Plan (“the Plan”)</strong></h2>
     <h2>
-        Why did the Trustees resolve to wind up the Ryanair Pension Plan?</h2>
+        <strong>Wind Up of the Ryanair Retirement and Death Benefits Plan (“the Plan”)</strong></h2>
+    <h2>
+        Why did the Trustees resolve to wind up the Ryanair Retirement and Death Benefits Plan?</h2>
     <p>
-        {?} gave notice that it was ceasing to voluntarily contribute
-        to the Plan with effect from {?}. {?} had already notified the Trustees
-        by notice dated {?} that it was ceasing liability to contribute and that
-        contributions after that date would be on a voluntary basis. After careful consideration,
-        taking legal and actuarial advice, the decision was taken by the Trustees to wind
-        up the Plan with effect from {WU-date}.</p>
+        Ryanair (Principal Employer) gave notice that it was ceasing to voluntarily contribute to the Plan with effect from 30 December 2013. After careful consideration, taking legal and actuarial advice, the decision was taken by the Trustee to wind up the Plan with effect from 30 December 2013.</p>
     <h2>
         What happens during a wind-up process?</h2>
     <p>
-        Once the decision is made to wind up the Plan, the Trustees then need to review
-        the investments of the Plan and to disinvest assets (this aspect is almost complete)
-        and then start the process of gathering all member data and their benefit details.
-        This will allow them to then determine the overall funding position of the Plan
-        and determine how much is payable to members.
+        Once the decision is made to wind up the Plan, the Trustee then needs to review the investments of the Plan and to disinvest assets (this aspect is complete) and then start the process of gathering all member data and their benefit details. This will allow them to then determine the overall funding position of the Plan and determine how much is payable to members. 
     </p>
     <p>
-        You will shortly be contacted to confirm the data held for you under the Plan. Once
-        any data queries are resolved then all members’ benefits will be finalised and the
-        process of communicating members’ options will start.
+        You will shortly be contacted to confirm the data held for you under the Plan. Once any data queries are resolved then all members’ benefits will be finalised and the process of communicating members’ options will start. 
     </p>
     <h2>
         How long will the process take?</h2>
     <p>
-        The process is likely to take at least 12 months and possibly up to 24 months depending
-        on the level of queries and data changes that arise.
+        The process is likely to take at least 2 to 3 months depending on the level of queries and data changes that arise. 
     </p>
     <h2>
         What will this mean for active members, deferred members and pensioners?</h2>
     <p>
-        Active members, or current employees who are members of the Plan, will not earn
-        any more benefits under the Plan after {WU-date} and will become deferred members
-        from that date. Deferred/Preserved pension entitlements will be calculated for each
-        member. This pension is based on the pension formula as set out under the rules
-        of the Plan and uses your final salary as at {WU-date} and your pensionable service
-        up to that date.</p>
-    <p>
-        If you had already left the Plan and are a deferred member then your deferred pension
-        has already been calculated and advised to you and is based on the service you completed
-        to your exit date and your final salary at that date.
+        Active members, or current employees who are members of the Plan, will not earn any more benefits under the Plan after 30 December 2013 and will become deferred members from that date. Deferred/Preserved pension entitlements will be calculated for each member. This pension is based on the pension formula as set out under the rules of the Plan and uses your final pensionable salary as at 30 December 2013 and your pensionable service up to that date.
     </p>
     <p>
-        Members who were in receipt of a pension from the Plan at {WU-date} will continue
-        to receive their pension each month. Unfortunately due to the funding deficit in
-        the Plan, no further increases will be payable until the overall assets and liabilities
-        of the Plan can be determined and paid out.
+        If you had already left the Plan and are a deferred member then your deferred pension has already been calculated and advised to you and is based on the service you completed to your exit date and your final pensionable salary at that date. 
     </p>
     <p>
-        Each member’s status is frozen as at the date of wind up, i.e. at {WU-date}. This
-        means that a member reaching normal retirement age after {WU-date} will not become
-        a pensioner of the Plan and will not receive an immediate pension. They will be
-        communicated with in due course as to their options and benefits under the Plan.
+        Members who were in receipt of a pension from the Plan at 30 December 2013 will continue to receive their pension each month. 
+    </p>
+    <p>
+        Each member’s status is frozen as at the date of wind up, i.e. at 30 December 2013. This means that a member reaching normal retirement age after 30 December 2013 will not become a pensioner of the Plan and will not receive an immediate pension. These members will be with in due course as to their options and benefits under the Plan and will include retirement options. 
     </p>
     <h2>
         Will current pensions continue to be paid as normal?
     </h2>
     <p>
-        Members who were in receipt of a pension from the Plan at {WU-date} will continue
-        to receive their pension each month. Unfortunately due to the funding deficit in
-        the Plan, no further increases will be payable until the overall assets and liabilities
-        of the Plan can be determined and paid out.
-        <h2>
-            Will there be pension increases?</h2>
-        <p>
-            Members who were in receipt of a pension from the Plan at {WU-date} will continue
-            to receive their pension each month. Unfortunately due to the funding deficit in
-            the Plan, no further increases will be payable until the overall assets and liabilities
-            of the Plan can be determined and paid out.
+        Members who were in receipt of a pension from the Plan at 30 December 2013 will continue to receive their pension each month. 
         </p>
         <h2>
             If a member is due to retire during the wind-up process can they access their pension
             benefit?</h2>
         <p>
-            Each member’s status is frozen as at the date of wind up, i.e. at {WU-date}. This
-            means that a member reaching normal retirement age after {WU-date} will not become
-            a pensioner of the Plan and will not receive an immediate pension. It will not be
-            possible to access pension benefits straight away. These members will be communicated
-            with in due course as to their options and benefits under the Plan and this will
-            include retirement options.
+            Each member’s status is frozen as at the date of wind up, i.e. at 30 December 2013. This means that a member reaching normal retirement age after 30 December 2013 will not become a pensioner of the Plan and will not receive an immediate pension. It will not be possible to access pension benefits straight away. These members will be communicated with in due course as to their options and benefits under the Plan and this will include retirement options. 
         </p>
         <h2>
             If a pensioner dies during the wind-up process is the spouse’s pension payable?</h2>
         <p>
-            If a pensioner dies during the wind up process a spouse’s pension is payable in
-            accordance with the normal scheme rules and the benefits applying to the member
-            on retirement.</p>
+            If a pensioner dies during the wind up process a spouse’s pension is payable in accordance with the normal scheme rules and the benefits applying to the member on retirement.</p>
         <h2>
             What happens if there is a death-in-service case?</h2>
         <p>
-            Death in service benefits are no longer provided under the Plan once it goes into
-            wind up. The Trustees understand that {?} has put alternative death in service
-            cover in place for current employees. If any active or deferred member of the Plan
-            dies after {WU-date}, the amount due to them as part of the wind up will still
-            be payable to their estate and details of this will be communicated in due course
-            when options are communicated to all members.</p>
+            Death in service benefits are no longer provided under the Plan once it goes into wind up. The Trustee understands that Ryanair has put alternative death in service cover in place for current employees. If any active or deferred member of the Plan dies after 30 December 2013, the amount due to them as part of the wind up will still be payable to their estate and details of this will be communicated in due course when options are communicated to all members.</p>
         <h2>
             If a member is entitled to a Refund of Contributions – will this be paid out during
             the wind up process?</h2>
         <p>
-            Members entitled to a refund of contributions will be advised of this option when
-            all members are communicated their options on wind up. It will not be possible to
-            avail of this sooner.
+            Members entitled to a refund of contributions will be advised of this option when all members are communicated their options on wind up. It will not be possible to avail of this sooner. 
         </p>
         <h2>
             Can members still access 30% of their AVCs during wind up process?</h2>
@@ -124,44 +76,21 @@
             or the order of who should receive benefits first and how they are calculated. In
             broad terms benefits are paid in the following order:</p>
         <p>
-            1. Pensions in payment (excluding future pension increases) For members who are
-            already retired at the wind up date, their current pension (p.a.) is secured by
-            annuity purchase. This means that pensions will be bought out with an insurance
-            company. Initially, this excludes any allowance for pension increases.</p>
+            1. Pensions in payment. For members who are already retired at the wind up date, their current pension (p.a.) is secured by annuity purchase. This means that pensions will be bought out with an insurance company</p>
         <p>
-            2. Preserved pensions for active and deferred members (excluding future pension
-            increases). These are paid for (active and deferred) members in the form of a transfer
-            value, calculated in accordance with the Minimum Funding Standard (MFS). Initially,
-            MFS transfer values are calculated excluding any allowance for pension increases
-            in retirement. The calculation of the MFS transfer value is prescribed and no discretion
-            rests with the Plan actuary or the trustees in the calculation of this figure for
-            each active and deferred member.</p>
-        <p>
-            3. Future post retirement increases on benefits under 1 and 2 above. Once the assets
-            have been used to meet the liabilities under 1 and 2 above, any remaining assets
-            are used to secure post retirement increases for pensioners (in the form of an increase
-            secured with their annuity purchase) and active and deferred members (in the form
-            of an increased MFS transfer value).
-        </p>
+            2. Preserved pensions for active and deferred members. These are paid for (active and deferred) members in the form of a transfer value, calculated in accordance with the Minimum Funding Standard (MFS). The calculation of the MFS transfer value is prescribed and no discretion rests with the Plan actuary or the trustees in the calculation of this figure for each active and deferred member.</p>
         <h2>
             What can the Plan afford to pay?</h2>
         <p>
             It is estimated based on current data available that the Plan will be in a position
             to meet the following benefits:</p>
         <p>
-            100% of pensions by annuity purchase for current pensioners, excluding future pension
-            increases 100% MFS transfer values for active and deferred members, excluding future
-            pension increases 0 – 10% of the liability for pension increases (annuity purchase
-            for pensioners, MFS transfer value for active and deferred members)
+            100% of pensions by annuity purchase for current pensioners,
+            </p><p>
+            110% MFS transfer values for active and deferred members.
         </p>
         <p>
-            The reason the amounts above are unknown is that the next step of the wind up is
-            to reconfirm and verify all member data and beneficiaries under the Plan. This may
-            lead to some changes in liability and therefore it is impossible at this stage to
-            put an exact number on this percentage. In addition, some of the assets of the Plan
-            are more complicated to liquidate (e.g. property assets) and this may take a few
-            months to complete. When options are communicated in more detail to members, the
-            numbers above will be confirmed.
+            The reason the amounts above are unknown is that the next step of the wind up is to reconfirm and verify all member data and beneficiaries under the Plan. This may lead to some changes in liability and therefore it is impossible at this stage to put an exact number on this percentage. When options are communicated in more detail to members, the numbers above will be confirmed. 
         </p>
         <h2>
             Members should note however, that the above is only an estimate and is in no way
@@ -185,29 +114,15 @@
             contact the administrator.
         </p>
         <h2>
-            Do deferred members have the option to transfer into their own chosen retirement
-            buyout bond after the wind-up has been finalised?
-        </h2>
-        <p>
-            The Trustees will consider this as part of the wind up process.</p>
-        <h2>
             What about future pension provisions for employees?</h2>
         <p>
-            All members cease to accrue any benefits under the Plan once a wind up is triggered
-            so for all current employees of {?} who are members of the Plan, pensionable
-            service will cease on {WU-date}. The Trustees of the Plan are not involved in
-            any discussions regarding pension provision after this date and it is a matter for
-            {?} and its employees.</p>
+            All members cease to accrue any benefits under the Plan once a wind up is triggered so for all current employees of  Ryanair who are members of the Plan, pensionable service will cease on 30 December 2013.  Active employees are being offered membership of the Ryanair defined contribution pension plan.
+        </p>
         <h2>
             Where can I get information?</h2>
         <p>
-            The administrator will be issuing further communication to you regarding your rights
-            and entitlements under the Plan in due course. I would note however, that the wind
-            up of a Plan of this size can take some time. Please be patient. The administrator
-            will not in a position to provide you with any details of your likely transfer value
-            for some months to come and individual member figures and options will not be available
-            until most likely, 2014. The first step will be to verify all member data and records
-            and you can expect to hear further on this in the coming weeks.</p>
+            The administrator will be issuing further communication to you regarding your rights and entitlements under the Plan in due course. I would note however, that the wind up of a Plan of this size can take some time. Please be patient. The administrator will not in a position to provide you with any details of your likely transfer value for some months to come and individual member figures and options will not be available until most likely, March 2014. The first step will be to verify all member data and records and you can expect to hear further on this in the coming weeks.
+        </p>
         <p>
             <strong>Wind up Administrator</strong><br />
             Allied Pension Trustees Limited<br />

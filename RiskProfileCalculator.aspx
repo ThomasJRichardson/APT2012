@@ -29,8 +29,8 @@
             with. There are no right or wrong answers and the questions do not take into account
             your specific circumstances, objectives or needs. The contents or results of the
             questionnaire should not be relied upon, either directly or indirectly, as a basis
-            up which to make investment or financial decisions or arrangements. APT Financial
-            Services Limited does nto accept any liability, either direct or indirect, arising
+            on which to make investment or financial decisions or arrangements. APT Financial
+            Services Limited does not accept any liability, either direct or indirect, arising
             from any such profile, or any other investment issue.
             <p/> 
             Financial planners have found that this simple questionnaire can be a useful guide

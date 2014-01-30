@@ -183,7 +183,9 @@
             </div>
         </div>
         <div id="main" class="clear">
-            <div class="nav">
+
+        <div id="submenu_wrapper">
+        <div class="nav">
 
                 <asp:Repeater runat="server" ID="rptSideNav" OnItemDataBound="RemoveNonVisibleItemsRpt">
                     <HeaderTemplate>
@@ -199,6 +201,10 @@
                 </asp:Repeater>
                 
             </div>
+        </div>
+
+
+
             <div class="content clear">
                 <div class="contentheader clear icon">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolderPageTitle" runat="server">
@@ -214,7 +220,13 @@
                         </div>
                     </asp:ContentPlaceHolder>
                 </div>
+
+
+                 
+
                 <div class="contentbody clear">
+                
+
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">                    
                     </asp:ContentPlaceHolder>
                 </div>
