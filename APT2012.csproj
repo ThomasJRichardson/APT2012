@@ -427,6 +427,9 @@
     <Content Include="APTTHEME\APT01\images\APTicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="APTTHEME\APT01\images\APTStyleContent.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="APTTHEME\APT01\images\bookmark.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1093,41 +1096,10 @@
     <None Include="APTADMINKEY.snk" />
     <Content Include="PlanSummary.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="Web.PREPROD.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.APT2012.H365.LIVE.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.APT.RAVEN.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.APT2012.H365.DEV.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.APTREPORTDEBUG.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <None Include="APTTHEME\APT01\images\vssver2.scc" />
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.test.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.WEBDEV-G4.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="IPPP\IPPP.Master" />
     <Content Include="packages.config" />
     <None Include="Lib\AjaxControlToolkit.dll.refresh" />
-    <None Include="RY\contact.aspx.bak" />
-    <None Include="RY\contact.aspx.cs.bak" />
     <Content Include="RY\RY.Master" />
     <None Include="RY\RY.Master.cs.rej" />
     <None Include="Web.config.ip.prod">
